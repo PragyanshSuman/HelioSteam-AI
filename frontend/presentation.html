@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelioSteam AI — Project Presentation Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09121d;
+      --card-bg: rgba(18, 30, 49, 0.85);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --accent-green: #10b981;
+      --accent-emerald: #059669;
+      --accent-amber: #f59e0b;
+      --accent-cyan: #06b6d4;
+      --accent-red: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at 15% 15%, #13253b 0%, #08101a 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    /* Top presentation navigation bar */
+    .top-bar {
+      height: 60px;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--card-border);
+      background: rgba(9, 18, 29, 0.7);
+      backdrop-filter: blur(12px);
+      z-index: 50;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-nav {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-nav:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-nav.active {
+      background: var(--accent-emerald);
+      border-color: var(--accent-green);
+      color: #fff;
+    }
+
+    .slide-counter {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      padding: 0 8px;
+    }
+
+    /* Presentation viewport */
+    .viewport {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      position: relative;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 1180px;
+      height: 640px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      position: relative;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Slide Header */
+    .slide-header {
+      margin-bottom: 24px;
+    }
+
+    .slide-category {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-amber);
+      margin-bottom: 6px;
+    }
+
+    .slide-title {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .slide-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* Slide Content Layouts */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .grid-3col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .grid-4col {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card.highlight {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .card.warning {
+      background: rgba(245, 158, 11, 0.08);
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .card.danger {
+      background: rgba(239, 68, 68, 0.08);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1rem;
+      color: var(--text-main);
+      line-height: 1.4;
+    }
+
+    .bullet-icon {
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .bullet-text strong {
+      color: #fff;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-size: 2.2rem;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-green);
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    .stat-sub {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-top: 4px;
+    }
+
+    /* Speaker Notes Drawer */
+    .speaker-notes-drawer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(12, 22, 36, 0.95);
+      border-top: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 20px 32px;
+      max-height: 180px;
+      overflow-y: auto;
+      border-radius: 0 0 20px 20px;
+      display: none;
+      backdrop-filter: blur(16px);
+      z-index: 10;
+    }
+
+    .speaker-notes-drawer.open {
+      display: block;
+    }
+
+    .notes-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-amber);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .notes-content {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      line-height: 1.5;
+    }
+
+    /* Progress bar */
+    .progress-bar-container {
+      height: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      width: 100%;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #10b981, #f59e0b);
+      width: 10%;
+      transition: width 0.3s ease;
+    }
+
+    /* Pill Badges */
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .pill-green { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .pill-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+    .pill-blue  { background: rgba(6, 182, 212, 0.2); color: #67e8f9; }
+
+    /* Title Slide Specifics */
+    .title-slide {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .title-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #fbbf24;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-title {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 760px;
+      line-height: 1.5;
+    }
+
+    .meta-pills {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="brand">
+      <span>☀️ HelioSteam AI</span>
+      <span class="brand-badge">Project Presentation</span>
+    </div>
+    <div class="nav-controls">
+      <button class="btn-nav" id="btnPrev" onclick="prevSlide()">← Prev</button>
+      <span class="slide-counter" id="slideCounter">1 / 10</span>
+      <button class="btn-nav" id="btnNext" onclick="nextSlide()">Next →</button>
+      <button class="btn-nav" id="btnNotes" onclick="toggleNotes()">🗣️ Speaker Notes (N)</button>
+      <button class="btn-nav" onclick="toggleFullScreen()">⛶ Fullscreen (F)</button>
+    </div>
+  </div>
+
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Viewport -->
+  <div class="viewport">
+
+    <!-- SLIDE 1: Title Slide -->
+    <div class="slide title-slide active" data-slide="1">
+      <div class="title-badge">☀️ Industrial AI & Green Thermal Energy</div>
+      <h1 class="hero-title">HelioSteam AI Platform</h1>
+      <p class="hero-sub">Daily Solar Steam Production Forecasting & LLM-Driven LPG Optimization for Industrial Plants</p>
+      <div class="meta-pills">
+        <span class="pill pill-green">Direct Solar Steam (DSG)</span>
+        <span class="pill pill-amber">Machine Learning (XGBoost)</span>
+        <span class="pill pill-blue">Groq Llama-3 AI Advisor</span>
+      </div>
+      <div style="margin-top: 32px; font-size: 0.9rem; color: var(--text-dim);">
+        Press <strong>[Right Arrow →]</strong> or click <strong>Next</strong> to begin the presentation
+      </div>
+
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 1)</div>
+        <div class="notes-content">
+          "Good morning/afternoon everyone. Today, I am proud to present <strong>HelioSteam AI</strong>. This project bridges machine learning with industrial thermal engineering to solve a multi-million-dollar challenge: how industrial factories can dependably use free solar steam to replace expensive, polluting LPG fossil fuel boilers."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: The Problem -->
+    <div class="slide" data-slide="2">
+      <div class="slide-header">
+        <div class="slide-category">Problem Statement</div>
+        <h2 class="slide-title">The Industrial Dilemma: Clean Solar vs. Reliable Steam</h2>
+        <p class="slide-subtitle">Why factories burn expensive fossil fuel even when solar mirrors are installed</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2col">
+          <div class="card danger">
+            <div class="card-title">⚠️ The Industrial Constraint</div>
+            <p class="card-text">
+              Factories (textiles, pharma, food processing, chemicals) require <strong>uninterrupted, high-pressure steam 24/7</strong>. Even a 10-minute steam pressure drop shuts down production lines, costing thousands of dollars.
+            </p>
+            <div class="bullet-list">
+              <div class="bullet-item">
+                <span class="bullet-icon">☁️</span>
+                <span class="bullet-text"><strong>Unpredictable Sunlight:</strong> Passing clouds or dust create sudden, rapid drops in solar steam output.</span>
+              </div>
+              <div class="bullet-item">
+                <span class="bullet-icon">🔥</span>
+                <span class="bullet-text"><strong>The "Fear Factor":</strong> Operators keep auxiliary LPG boilers burning on standby 24/7 just in case solar drops.</span>
+              </div>
+            </div>
+          </div>
+          <div class="card warning">
+            <div class="card-title">💸 The Costly Consequences</div>
+            <p class="card-text">
+              Because operators cannot foresee weather variations hour-by-hour, clean energy is wasted and fuel consumption remains sky-high.
+            </p>
+            <div class="grid-2col" style="margin-top: 8px;">
+              <div class="stat-box">
+                <div class="stat-val" style="color: var(--accent-red);">24 Tons</div>
+                <div class="stat-label">LPG Burned Daily</div>
+                <div class="stat-sub">Parasitic backup firing</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-val" style="color: var(--accent-amber);">$1.2M+</div>
+                <div class="stat-label">Annual Fuel Waste</div>
+                <div class="stat-sub">Heavy industrial cost</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 2)</div>
+        <div class="notes-content">
+          "Factories in textiles, pharmaceuticals, and food production need boiling steam 24 hours a day. Solar mirrors give free, green steam—but the sun is unpredictable. A single cloud cuts steam output. Because factories cannot stop their machines, operators leave fossil fuel boilers running on standby all day long out of fear. This wastes over 24,000 kg of gas every day and emits massive carbon pollution."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Objectives -->
+    <div class="slide" data-slide="3">
+      <div class="slide-header">
+        <div class="slide-category">Core Objectives</div>
+        <h2 class="slide-title">What We Set Out to Achieve</h2>
+        <p class="slide-subtitle">Four pillar milestones uniting prediction, optimization, and intuitive operator guidance</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-4col">
+          <div class="card highlight">
+            <div class="card-title">1. Predict Ahead</div>
+            <p class="card-text">Forecast next-hour and 24-hour solar steam production (t/h) using real-time SCADA and weather telemetry.</p>
+          </div>
+          <div class="card highlight">
+            <div class="card-title">2. Displace LPG</div>
+            <p class="card-text">Calculate exact hours when solar output exceeds demand so the auxiliary LPG boiler can be safely shut off.</p>
+          </div>
+          <div class="card highlight">
+            <div class="card-title">3. Optimize Storage</div>
+            <p class="card-text">Intelligently schedule charging and discharging across 9 steam accumulator tanks to eliminate evening peak gas firing.</p>
+          </div>
+          <div class="card highlight">
+            <div class="card-title">4. Simplify Control</div>
+            <p class="card-text">Provide an interactive SVG character guide ("Helio") and natural-language AI chat to make complex operations effortless.</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 3)</div>
+        <div class="notes-content">
+          "Our project had four key objectives: First, predict solar steam output 1 hour and 24 hours ahead. Second, calculate exactly when the operator can safely shut off the LPG boiler. Third, optimize the plant's 9 thermal accumulator storage tanks so solar steam stored in the afternoon covers the night shift. And fourth, wrap everything in an intuitive UI with a character mascot and AI chat so any operator can use it without confusion."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Architecture & Dataset -->
+    <div class="slide" data-slide="4">
+      <div class="slide-header">
+        <div class="slide-category">System Architecture & Telemetry</div>
+        <h2 class="slide-title">Industrial Plant Setup & SCADA Telemetry</h2>
+        <p class="slide-subtitle">Trained on 8,760 hours of real-world direct solar steam generation datasets</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2col">
+          <div class="card">
+            <div class="card-title">🏭 The Physical Plant Components</div>
+            <ul class="bullet-list">
+              <li class="bullet-item">
+                <span class="bullet-icon">📡</span>
+                <span class="bullet-text"><strong>Solar Field:</strong> East Field (Loops 1–10) + West Field (Loops 11–27) parabolic troughs.</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🛢️</span>
+                <span class="bullet-text"><strong>Thermal Storage:</strong> 9 Steam Accumulator pressure vessels (Tanks 1–9) operating at 62 barg.</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🔥</span>
+                <span class="bullet-text"><strong>Auxiliary Backup:</strong> LPG-fired boiler supplying 28.0 t/h peak steam requirement.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-title">📊 Monitored Sensor Data</div>
+            <ul class="bullet-list">
+              <li class="bullet-item">
+                <span class="bullet-icon">☀️</span>
+                <span class="bullet-text"><strong>Solar Metrics:</strong> Global Horizontal Irradiance (GHI), East DNI, West DNI ($W/m^2$).</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🌡️</span>
+                <span class="bullet-text"><strong>Weather Factors:</strong> Ambient Temperature ($^\circ C$), Wind Speed ($km/h$).</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">⚙️</span>
+                <span class="bullet-text"><strong>Hydraulics:</strong> Feedwater flows ($t/h$), collector pressures ($barg$), drum temperatures.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 4)</div>
+        <div class="notes-content">
+          "The dataset comes from an industrial parabolic trough solar thermal plant. It has an East solar field, a West solar field, and 9 high-pressure steam storage tanks. Every hour, our model ingests solar radiation data—GHI, East and West direct normal irradiance—plus wind speed, ambient temperature, and water pump flows to predict exact steam output."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: Data Preprocessing -->
+    <div class="slide" data-slide="5">
+      <div class="slide-header">
+        <div class="slide-category">Data Engineering</div>
+        <h2 class="slide-title">Dataset Preprocessing & Sensor Resilience</h2>
+        <p class="slide-subtitle">Transforming raw, noisy SCADA readings into robust machine learning inputs</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-3col">
+          <div class="card">
+            <div class="card-title">🌙 1. Nighttime Zero-Filtering</div>
+            <p class="card-text">
+              Sensors produce small noise signals at night. All hours where $GHI \le 15.0\,W/m^2$ were mathematically clamped to prevent negative steam predictions.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">🛡️ 2. Resilient Median Imputation</div>
+            <p class="card-text">
+              Industrial sensors occasionally drop packets. We built an imputer using training medians so if a physical pyranometer fails, the model continues running seamlessly.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">📐 3. Diurnal & East/West Bias</div>
+            <p class="card-text">
+              Engineered directional features separating morning sun (East field) from afternoon sun (West field) to accurately match the sun's trajectory.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 5)</div>
+        <div class="notes-content">
+          "Real factory data is noisy. We handled three major preprocessing steps: First, we filtered out nighttime sensor drift so the model never predicts negative steam. Second, we built median imputation so if an outdoor sensor drops off the network, the dashboard doesn't crash. Third, we engineered features for East vs. West fields because morning sun hits the East mirrors while afternoon sun hits the West mirrors."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: Machine Learning Model -->
+    <div class="slide" data-slide="6">
+      <div class="slide-header">
+        <div class="slide-category">Model Architecture</div>
+        <h2 class="slide-title">Extreme Gradient Boosting (XGBoost Regressor)</h2>
+        <p class="slide-subtitle">Capturing non-linear thermal inertia and optical geometries in milliseconds</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-2col">
+          <div class="card">
+            <div class="card-title">🧠 Why XGBoost Over Other Models?</div>
+            <ul class="bullet-list">
+              <li class="bullet-item">
+                <span class="bullet-icon">⚡</span>
+                <span class="bullet-text"><strong>Thermal Inertia:</strong> Metal solar tubes take 45 minutes to warm up. Tree ensembles capture threshold effects far better than linear regression.</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">⏱️</span>
+                <span class="bullet-text"><strong>Sub-5ms Latency:</strong> Executes instantaneously on edge servers without requiring heavy GPU infrastructure.</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🔍</span>
+                <span class="bullet-text"><strong>Interpretable:</strong> Provides exact feature importance rankings to build trust with plant engineers.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card highlight">
+            <div class="card-title">🏆 Top Feature Importance</div>
+            <ul class="bullet-list">
+              <li class="bullet-item">
+                <span class="bullet-icon">🥇</span>
+                <span class="bullet-text"><strong>GHI (Solar Irradiance):</strong> 58.12% contribution</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🥈</span>
+                <span class="bullet-text"><strong>Steam Current (Lag-1):</strong> 18.24% contribution</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🥉</span>
+                <span class="bullet-text"><strong>West & East DNI:</strong> 12.98% combined contribution</span>
+              </li>
+              <li class="bullet-item">
+                <span class="bullet-icon">🎖️</span>
+                <span class="bullet-text"><strong>Hour & Feedwater:</strong> Balance of thermal physics</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 6)</div>
+        <div class="notes-content">
+          "We chose XGBoost because solar thermal plants have thermal inertia—pipes take time to heat up. Linear models are too simplistic, and neural networks require heavy GPUs. XGBoost runs in under 5 milliseconds and explains its logic: Global Horizontal Irradiance accounts for 58% of the prediction, followed by the previous hour's steam output and direct normal irradiance."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: Evaluation Results -->
+    <div class="slide" data-slide="7">
+      <div class="slide-header">
+        <div class="slide-category">Evaluation & Benchmarks</div>
+        <h2 class="slide-title">Model Accuracy & Benchmark Results</h2>
+        <p class="slide-subtitle">Proven over 359 complete operational days across clear sky, cloudy, and overcast conditions</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-4col">
+          <div class="stat-box">
+            <div class="stat-val">0.9158</div>
+            <div class="stat-label">Hourly R² Score</div>
+            <div class="stat-sub">91.6% variance explained</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">2.08</div>
+            <div class="stat-label">Hourly MAE (t/h)</div>
+            <div class="stat-sub">57% lower than baseline</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">0.9911</div>
+            <div class="stat-label">Daily R² Score</div>
+            <div class="stat-sub">Aggregated daily reliability</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" style="color: var(--accent-amber);">+46.2%</div>
+            <div class="stat-label">Skill Score</div>
+            <div class="stat-sub">vs. industry persistence</div>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-title">📈 Key Evaluation Takeaways</div>
+          <p class="card-text">
+            Our model delivers an <strong>R² of 0.916 on hourly forecasts</strong> and an outstanding <strong>0.991 on daily cumulative steam</strong>. Compared to the persistence baseline (assuming the next hour equals the current hour), our model improves accuracy by <strong>+46.21%</strong>, successfully anticipating solar ramps and cloud cover transitions.
+          </p>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 7)</div>
+        <div class="notes-content">
+          "Looking at our validation metrics across 359 operating days: Our model achieves an R-squared of 0.916 on hourly predictions, and 0.991 on daily total steam. Our Mean Absolute Error is just 2.08 tons per hour. Most importantly, against the industry standard persistence baseline, our model demonstrates a 46.2% forecasting skill improvement."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 8: Demonstration Walkthrough -->
+    <div class="slide" data-slide="8">
+      <div class="slide-header">
+        <div class="slide-category">Live System Architecture</div>
+        <h2 class="slide-title">HelioSteam User Experience & Demo Walkthrough</h2>
+        <p class="slide-subtitle">5 structured steps designed for plant operators</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-3col">
+          <div class="card">
+            <div class="card-title">📅 1. Multi-Year Selector</div>
+            <p class="card-text">Switch seamlessly across 2025, 2026, and 2027 or select weather profiles (Clear Sky, Cloudy, Overcast).</p>
+          </div>
+          <div class="card">
+            <div class="card-title">📊 2. 24h Production Phases</div>
+            <p class="card-text">Interactive curve structured into Morning Warm-Up, Midday Peak, and Evening Stored Steam.</p>
+          </div>
+          <div class="card">
+            <div class="card-title">🛢️ 3. Storage Optimization</div>
+            <p class="card-text">Shows exact charging times for Tanks 1–9 and proves how 17 hours of Zero-LPG operation are achieved.</p>
+          </div>
+        </div>
+        <div class="grid-2col" style="margin-top: 16px;">
+          <div class="card highlight">
+            <div class="card-title">🎮 4. 1-Click Stress Tests & Helio Guide</div>
+            <p class="card-text">Instant challenges (Cloud Ambush, Dusty Mirrors, Rush Order) plus an animated mascot guide.</p>
+          </div>
+          <div class="card highlight">
+            <div class="card-title">🤖 5. Groq Llama-3 AI Operator Chat</div>
+            <p class="card-text">Real-time LLM advisory providing instant natural language technical guidance for plant engineers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 8)</div>
+        <div class="notes-content">
+          "Now let's look at the live software demo. We designed it in 5 structured steps: Step 1 lets the user pick any date across 2025 to 2027. Step 2 shows the 24-hour curve split into Morning Warm-up, Midday Peak, and Evening Stored Steam. Step 3 shows thermal storage optimization. Step 4 features 1-click stress tests like Cloud Ambush, guided by our character mascot Helio. And Step 5 integrates live Groq Llama-3 AI chat for operator support."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: Economic & Environmental Impact -->
+    <div class="slide" data-slide="9">
+      <div class="slide-header">
+        <div class="slide-category">Impact & ROI</div>
+        <h2 class="slide-title">Measurable Economic & Environmental Returns</h2>
+        <p class="slide-subtitle">Realized impact on a typical peak solar day (July 16)</p>
+      </div>
+      <div class="slide-body">
+        <div class="grid-4col">
+          <div class="stat-box">
+            <div class="stat-val">945 t</div>
+            <div class="stat-label">Solar Steam Made</div>
+            <div class="stat-sub">Clean thermal output</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val" style="color: var(--accent-amber);">24,966 kg</div>
+            <div class="stat-label">LPG Fuel Saved</div>
+            <div class="stat-sub">In a single sunny day</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">$22,969</div>
+            <div class="stat-label">Daily Cost Savings</div>
+            <div class="stat-sub">&gt; $1.2M projected/year</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">74.9 t</div>
+            <div class="stat-label">CO₂ Prevented</div>
+            <div class="stat-sub">Clean green impact</div>
+          </div>
+        </div>
+        <div class="card highlight" style="margin-top: 24px;">
+          <div class="card-title">🌟 The Ultimate Operational Milestone</div>
+          <p class="card-text" style="font-size: 1.05rem;">
+            By pairing predictive XGBoost dispatch with 9 steam accumulator vessels, the plant achieves <strong>17 continuous hours of 100% Zero-LPG boiler operation</strong> on peak summer days—completely isolating the fossil-fuel burner from 06:00 to 23:00.
+          </p>
+        </div>
+      </div>
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 9)</div>
+        <div class="notes-content">
+          "What does this mean in real business numbers? On a typical sunny day, our system manages 945 tons of solar steam. That saves nearly 25,000 kilograms of LPG, saves $22,969 dollars in a single day, and prevents 74.9 tons of CO2 from entering our atmosphere. That is equivalent to over 1.2 million dollars saved per year."
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 10: Conclusion -->
+    <div class="slide title-slide" data-slide="10">
+      <div class="title-badge" style="background: rgba(16, 185, 129, 0.2); border-color: var(--accent-green); color: var(--accent-green);">
+        Project Conclusion
+      </div>
+      <h2 class="hero-title" style="font-size: 2.6rem;">Turning Unpredictable Sunlight into Dependable Industrial Power</h2>
+      <p class="hero-sub">
+        "Decarbonizing industrial heat does not just require solar mirrors—it requires smart predictive software. HelioSteam proves that AI makes renewable steam reliable, cost-effective, and safe."
+      </p>
+      <div class="meta-pills" style="margin-top: 16px;">
+        <span class="pill pill-green">✓ 91.6% Forecasting Accuracy</span>
+        <span class="pill pill-amber">✓ 24,966 kg LPG Saved / Day</span>
+        <span class="pill pill-blue">✓ Live Groq AI & Helio UI</span>
+      </div>
+      <div style="margin-top: 28px; font-size: 1.2rem; font-weight: 700; color: #fff;">
+        Thank You! — Questions & Discussion
+      </div>
+
+      <div class="speaker-notes-drawer">
+        <div class="notes-title">🗣️ Speaker Notes (Slide 10)</div>
+        <div class="notes-content">
+          "In conclusion: Transitioning heavy manufacturing away from fossil fuels doesn't just require solar hardware—it requires smart predictive software. By bridging industrial SCADA telemetry with machine learning forecasting and generative AI decision support, HelioSteam transforms unpredictable solar energy into a dependable, cost-saving, and zero-emission industrial power source. Thank you, and I am now ready for your questions."
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 10;
+    const notesDrawer = document.querySelectorAll('.speaker-notes-drawer');
+
+    function updateSlide() {
+      document.querySelectorAll('.slide').forEach(slide => {
+        slide.classList.remove('active');
+        if (parseInt(slide.getAttribute('data-slide')) === currentSlide) {
+          slide.classList.add('active');
+        }
+      });
+      document.getElementById('slideCounter').textContent = `${currentSlide} / ${totalSlides}`;
+      document.getElementById('progressBar').style.width = `${(currentSlide / totalSlides) * 100}%`;
+      document.getElementById('btnPrev').disabled = (currentSlide === 1);
+      document.getElementById('btnNext').disabled = (currentSlide === totalSlides);
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        currentSlide++;
+        updateSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+        updateSlide();
+      }
+    }
+
+    function toggleNotes() {
+      const btn = document.getElementById('btnNotes');
+      const activeSlide = document.querySelector('.slide.active .speaker-notes-drawer');
+      if (activeSlide) {
+        activeSlide.classList.toggle('open');
+        btn.classList.toggle('active');
+      }
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        prevSlide();
+      } else if (e.key.toLowerCase() === 'n') {
+        toggleNotes();
+      } else if (e.key.toLowerCase() === 'f') {
+        toggleFullScreen();
+      }
+    });
+
+    updateSlide();
+  </script>
+</body>
+</html>

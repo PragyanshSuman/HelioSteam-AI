@@ -1,0 +1,10 @@
+Solar_field.png (image/png) 212428 bytes.
+Storage.png (image/png) 172345 bytes.
+Year 2025.csv (text/comma-separated-values) 5250461 bytes.
+README.txt (text/plain) 11035 bytes.
+24-hour period.xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) 14135516 bytes.
+Description.csv (text/comma-separated-values) 6748 bytes.
+24-hour period.csv (text/comma-separated-values) 5486952 bytes.
+Description.xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) 14801 bytes.
+Year 2025.xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) 14809477 bytes.
+Power_Block.png (image/png) 182663 bytes.

@@ -1,0 +1,476 @@
+0 TABLE 3x2 | Predictive Neural Modelli
+2 Body Text CENTER (1) sz=[14.0] b=[None] ls=19050 fi=None    | 21CSC402P-PROJECT
+4 Heading 4 None sz=[] b=[None] ls=19050 fi=None    | Submitted by
+6 Body Text CENTER (1) sz=[16.0] b=[None] ls=19050 fi=None    | Lehar Deepak Tolani [RA2311026010676]
+7 Body Text CENTER (1) sz=[16.0] b=[None] ls=19050 fi=None    |    Namita Nahata [RA2311026010677]
+8 Body Text CENTER (1) sz=[16.0] b=[None] ls=19050 fi=None    | Agamjot Kaur Choudhary [RA2311026010681]
+10 Heading 4 None sz=[] b=[None] ls=19050 fi=None    | Under the Guidance of
+12 Body Text CENTER (1) sz=[16.0] b=[None] ls=19050 fi=None    | Dr. Illakiya T
+13 Body Text CENTER (1) sz=[] b=[None] ls=19050 fi=None    | (Assistant Professor, Department of Computational Intelligence)
+15 Heading 3 None sz=[] b=[None] ls=19050 fi=None    | in partial fulfillment of the requirements               for the degree of
+17 Heading 2 None sz=[] b=[None] ls=19050 fi=None    | BACHELOR OF TECHNOLOGY
+18 Heading 2 None sz=[] b=[None] ls=19050 fi=None    | in
+19 Heading 2 None sz=[] b=[None] ls=19050 fi=None    | COMPUTER SCIENCE ENGINEERING
+20 Heading 2 None sz=[] b=[None] ls=19050 fi=None    | with specialization in Artificial Intelligence and Machine Learning
+21 Body Text CENTER (1) sz=[] b=[None] ls=19050 fi=None   IMG | 
+24 Heading 2 None sz=[] b=[None] ls=19050 fi=None    | DEPARTMENT OF COMPUTATIONAL INTELLIGENCE COLLEGE OF ENGINEERING AND TECHNOLOGY
+25 Normal CENTER (1) sz=[16.0] b=[None] ls=19050 fi=None    | SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+26 Heading 2 None sz=[] b=[None] ls=19050 fi=None    | KATTANKULATHUR- 603 203
+27 Heading 3 None sz=[] b=[None] ls=19050 fi=None    | NOVEMBER 2026
+28 Body Text None sz=[] b=[] ls=19050 fi=None SECT   | 
+29 Body Text CENTER (1) sz=[] b=[None] ls=19050 fi=None   IMG | Department of Computational Intelligence
+30 Normal CENTER (1) sz=[12.0] b=[True] ls=None fi=None    | SRM Institute of Science & Technology
+31 Heading 5 CENTER (1) sz=[] b=[None] ls=19050 fi=-924560    | Own Work Declaration Form
+33 Normal CENTER (1) sz=[12.0] b=[None] ls=None fi=None    | To be completed by the student for all assessments
+35 TABLE 4x3 | Degree/ Course / : / B. Tech Computer Science 
+37 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=None    | We hereby certify that this assessment compiles with the University’s Rules and Regulations relating
+39 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=None    | We confirm that all the work contained in this assessment is our own except where indicated, and tha
+41 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=-229235    | Clearly referenced / listed all sources as appropriate
+42 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=-229235    | Referenced and put in inverted commas all quoted text (from books, web, etc)
+43 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=-229235    | Given the sources of all pictures, data etc. that are not my own
+44 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=-229235    | Not made any use of the report(s) or essay(s) of any other student(s) either past or present
+45 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.4583333333333333 fi=None    | Acknowledged in appropriate places any help that I have received from others (e.g. fellow students, 
+46 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.4583333333333333 fi=None    | Compiled with any other plagiarism criteria specified in the Course handbook / University website
+47 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=None fi=None    | We understand that any false claim for this work will be penalized in accordance with the University
+49 TABLE 2x1 | DECLARATION:
+52 Body Text None sz=[] b=[None] ls=19050 fi=None   IMG | 
+57 Heading 1 None sz=[] b=[None] ls=1.5 fi=None    | SRM INSTITUTE OF SCIENCE AND TECHNOLOGY  KATTANKULATHUR – 603 203
+58 Heading 2 None sz=[] b=[None] ls=1.5 fi=None    | BONAFIDE CERTIFICATE
+62 Normal JUSTIFY (3) sz=[14.0] b=[None] ls=1.5 fi=223520    | Certified that 21CSC402P - Project report titled “Predictive Neural Modelling Of Sleep Stage Transit
+65 TABLE 1x2 | SIGNATURE
+
+DR. ILLAKIYA T / SIGNATURE
+
+DR. R. ANNIE U
+69 TABLE 1x2 |  / 
+72 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | ACKNOWLEDGEMENT
+73 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We express our humble gratitude to Dr. C. Muthamizhchelvan, Vice-Chancellor, SRM Institute of Scienc
+74 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We extend our sincere thanks to Dr. Leenus Jesu Martin M, Dean-CET, SRM Institute of Science and Tec
+75 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We wish to thank Dr. Revathi Venkataraman, Professor and Chairperson, School of Computing, SRM Insti
+76 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We encompass our sincere thanks to, Dr. M. Pushpalatha, Professor and Associate Chairperson - CS, Sc
+77 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We are incredibly grateful to our Head of the Department, Dr. R. Annie Uthra, Professor & Department
+78 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We want to convey our thanks to our Project Coordinators, Panel Head, and Panel Members Department o
+79 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We register our immeasurable thanks to our Faculty Advisor, Dr. Illakiya T, Department of Computatio
+80 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | Our inexpressible respect and thanks to our guide, Dr. Illakiya T, Department of Computational Intel
+81 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=19050 fi=None    | We sincerely thank all the staff members of Department of Computational Intelligence, School of Comp
+86 Normal None sz=[12.0] b=[None] ls=19050 fi=None    | Lehar Deepak Tolani	
+87 Normal None sz=[12.0] b=[None] ls=19050 fi=None    | Namita Nahata
+88 Normal None sz=[12.0] b=[None] ls=19050 fi=None    | Agamjot Kaur Choudhary			   
+89 Normal CENTER (1) sz=[] b=[] ls=19050 fi=None SECT   | 
+90 Normal CENTER (1) sz=[17.0] b=[True] ls=19050 fi=None    | ABSTRACT
+92 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Sleep stage identification from electroencephalography (EEG) underpins the diagnosis of sleep disord
+94 Normal None sz=[12.0] b=[True] ls=1.5 fi=None    | Index Terms: Sleep stage forecasting, electroencephalography, self-supervised learning, graph neural
+107 Normal CENTER (1) sz=[16.0] b=[True] ls=1.15 fi=None    | TABLE OF CONTENTS
+108 TABLE 118x4 | CHAPTER NO. / CHAPTER NO. / TITLE / PAGE NO.
+126 Normal CENTER (1) sz=[17.0] b=[True] ls=19050 fi=457200    | LIST OF FIGURES
+128 TABLE 8x3 | FIGURE NO. / TITLE / PAGE NO.
+129 Normal JUSTIFY (3) sz=[] b=[] ls=1.15 fi=None SECT   | 
+130 Normal CENTER (1) sz=[17.0] b=[True] ls=19050 fi=457200    | LIST OF TABLES
+132 TABLE 15x3 | TABLE NO. / TITLE / PAGE NO.
+133 Normal JUSTIFY (3) sz=[] b=[] ls=None fi=None SECT   | 
+134 Normal CENTER (1) sz=[17.0] b=[True] ls=19050 fi=None    | ABBREVIATIONS
+136 TABLE 27x2 | ABBREVIATION / FULL FORM
+137 Normal None sz=[12.0] b=[None] ls=None fi=None  PB  | 
+138 TABLE 21x2 | MASS / Montreal Archive of Sleep
+139 Normal CENTER (1) sz=[] b=[] ls=1.15 fi=None SECT   | 
+140 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 1
+141 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | INTRODUCTION
+142 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | Sleep is organised into a recurring sequence of discrete physiological stages, wake, N1, N2, N3, and
+143 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | This gap has practical consequences that extend beyond raw accuracy figures. A classifier that only 
+145 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 1.1 Introduction To Sleep Stage Transition Prediction
+146 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | This project addresses sleep staging as a forecasting problem rather than a classification problem. 
+148 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 1.2 Problem Statement And Description
+149 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | Four gaps recur across the reviewed literature. First, sleep staging models are trained and evaluate
+151 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 1.3 Motivation
+152 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | The clinical cost of the current approach is concrete. N1 misclassification distorts downstream meas
+154 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 1.4 Sustainable Development Goal Of The Project
+155 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | This project contributes most directly to SDG 3, Good Health and Well-being. Sleep disorders affect 
+166 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 2
+167 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | LITERATURE SURVEY
+168 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    |  Sleep stage identification from EEG has been studied for decades as a signal processing and, more r
+170 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 2.1 Overview Of Sleep Stage Classification and Transition Prediction Methods
+171 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Automated analysis of sleep EEG has progressed through three broad generations of methodology. Early
+172 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The second generation replaced handcrafted features with end-to-end convolutional and recurrent arch
+173 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A subset of this generation extended the input window across multiple consecutive epochs to model tr
+174 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The third and most recent generation shifts focus from architecture toward representation quality, u
+176 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 2.2 Deep Learning Approaches For EEG Based Sleep Staging
+177 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 2.2.1 Classical And Feature Based Methods
+178 Normal (Web) JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | Classical sleep staging methods represent each epoch as a fixed-length feature vector derived from s
+180 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 2.2.2 CNN And RNN Sequence Architectures
+181 Heading 3 JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The introduction of convolutional and recurrent architectures enabled feature learning directly from
+183 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 2.2.3 Transition-Aware and Temporal Context Modeling
+184 Heading 3 JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A distinct thread of work incorporates multiple consecutive epochs into the input to model transitio
+185 Heading 3 JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Two observations follow from this thread as a whole. First, every method that improves transition or
+187 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 2.2.4 Self-Supervised and Graph Based Learning
+188 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A more recent thread shifts emphasis from architecture toward representation quality, using self-sup
+189 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A parallel body of work applies graph and domain-adaptation techniques specifically to the cross-dat
+190 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Taken together, this generation demonstrates two capabilities separately, self-supervised pretrainin
+192 List Paragraph JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=0    | 2.2.5 Uncertainty-Aware Modeling
+193 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A smaller but methodologically important thread treats prediction confidence as an explicit output r
+195 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 2.3 Limitations Of Existing Methods
+196 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | The reviewed literature does not consist of isolated contributions but of a chain of methods where e
+197 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | A second chain runs through representation learning rather than temporal context, and it converges o
+198 Normal CENTER (1) sz=[12.0] b=[None] ls=1.5 fi=None    | TABLE 2.1: Representative sleep stage classification and transition-modeling methods with input moda
+199 TABLE 19x5 | Method / Year / Input Modality / Model Family / Key Limitation
+201 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 2.1 makes the structural gap explicit. Methods that model transitions [5]–[9], [12], [13] do n
+203 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 2.4 Research Objectives
+204 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To develop a self-supervised EEG encoder that learns pre-transition representations from unlabelled 
+205 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To design a graph-based module that models functional relationships between EEG channels as a learna
+206 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To construct a temporal transition prediction head that forecasts the upcoming sleep stage from EEG 
+207 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To incorporate an uncertainty estimation module that produces calibrated confidence scores for each 
+208 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To evaluate the proposed framework across two datasets, Sleep-EDF and a second dataset selected for 
+209 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To analyze N1-stage and transition-epoch performance specifically, given that this is the class and 
+210 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | To incorporate explainability mechanisms, including attention or graph-attention visualization, that
+212 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=19050 fi=None    | 2.5 Plan Of Action
+213 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The project follows a structured, iterative development plan that moves from literature consolidatio
+214 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The third phase extends this baseline toward transition awareness, but rather than adopting the retr
+215 List Paragraph JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The fifth phase adds the uncertainty and explainability components, extending the Hypodensity Interv
+217 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 3
+218 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | PROBLEM STATEMENT
+219 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    |  Chapter 2 established that no reviewed method treats sleep staging as a forecasting task, that self
+221 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.1 Formal Problem Definition
+222 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Let an overnight EEG recording be represented as a sequence of  consecutive epochs,  where each epoc
+224 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where the second form, used by the transition-aware methods surveyed in Section 2.2.3, additionally 
+226 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where the model observes only a causal window of k epochs ending at the current time step t and prod
+227 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This reformulation carries a direct consequence for evaluation as well as architecture. Under the co
+229 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.2 Decomposition into Sub-Problems
+230 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The formal mapping in Section 3.1 cannot be solved as a single monolithic modeling choice, because C
+232 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.2.1 Representation Learning Under Label Scarcity
+233 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | The function  requires an encoder capable of extracting discriminative structure from raw EEG, but e
+235 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.2.2 Structural Modeling of EEG Channel Relationships
+236 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The input  is inherently multi-channel, and the spatial relationships between channels carry informa
+238 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.2.3 Temporal Forecasting Across the Transition Boundary
+239 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Even with a suitable encoder and channel structure in place, the model must still learn to extrapola
+240 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.2.4 Calibrated Confidence for an Unobserved Label
+241 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Because the target label ​ is, by construction, not yet observed at inference time, a forecasting mo
+243 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.3 Constraints and Assumptions
+244 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The four sub-problems in Section 3.2 must be solved within a set of practical boundaries that determ
+245 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.3.1 Causality Constraint
+246 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | At inference time, the model has access only to  and to nothing occurring at or after index . This r
+248 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.3.2 Input Modality and Channel Configuration
+249 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The formulation in Section 3.1 is agnostic to , the number of EEG channels, but the constraint impos
+251 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.3.3 No Auxiliary or Structural Data Dependency
+252 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Several graph-based methods reviewed in Chapter 2, most notably the domain-adversarial GNN approach 
+254 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.3.4 Label Definition and Transition Granularity
+255 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Sleep stages are labelled at the resolution of complete 30-second epochs under AASM convention, and 
+257 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.3.5 Evaluation Protocol Constraint
+258 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Consistent with the cross-subject and cross-dataset validation practices established by SleepDG [22]
+260 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.4 Why the Problem Is Non-Trivial
+261 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A reasonable objection to the formulation in Section 3.1 is that it reduces to ordinary classificati
+262 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.4.1 The Naive Label-Shift Baseline Fails on Information Grounds
+263 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Consider the naive approach of taking any epoch-level classifier reviewed in Section 2.2.2, such as 
+265 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.4.2 Pre-Transition EEG Carries a Weaker and Noisier Signal
+266 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Even a model that genuinely restricts itself to the causal window ​, as required by Section 3.3.1, f
+268 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.4.3 The Four Sub-Problems Cannot Be Solved Independently
+269 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Section 3.2 decomposed the task into representation learning, graph structure, temporal forecasting,
+271 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 3.5 Problem Statement Summary
+272 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This chapter has defined the task addressed by this work as learning a function ​ that forecasts the
+279 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 4
+280 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CONTRIBUTIONS
+281 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=226695    | Chapter 3 decomposed the forecasting objective
+
+282 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=None    | into four sub-problems, label-efficient representation learning, learnable graph-structured channel 
+284 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.1 Self-Supervised Pre-Transition Representation Learning
+285 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Automated analysis of sleep EEG has progressed through three broad generations of methodology. Early
+286 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This work contributes a self-supervised pretraining objective designed around the forecasting task d
+288 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.2 Learnable Graph-Structured Channel Modeling
+289 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This work contributes a channel-relationship graph that is constructed automatically from EEG signal
+291 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.3 Causal Multi-Horizon Transition Forecasting
+292 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This work contributes a decoder that produces predictions for the current epoch and two future epoch
+294 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.4 Calibrated Confidence for Forecasted Labels
+295 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This work contributes an uncertainty and explainability module that extends calibrated confidence es
+297 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.5 Joint Integration Under a Single Trained Framework
+298 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Beyond the four contributions above, this work contributes their integration into one trained system
+300 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.6 Cross-Dataset Deployment Without Retraining
+301 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A further contribution follows from Section 4.5's joint training design: because the framework produ
+303 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 4.7 Summary of Contributions
+304 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 4.1 maps each contribution back to the sub-problem it answers and the specific reviewed method
+305 Body Text 2 None sz=[] b=[None] ls=None fi=None    | Table 4.1: Mapping of contributions to problem sub-components and reviewed baselines
+306 TABLE 7x3 | Contribution / Sub-Problem Addressed / Reviewed Methods Improved
+308 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Chapter 5 now presents the complete G-TransSleep architecture that implements these six contribution
+324 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 5
+325 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | PROPOSED MODEL
+326 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Chapter 4 stated six contributions in terms of what each component of the framework achieves and whi
+328 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.1 Notation and Architectural Overview
+329 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The framework operates on a causal window of k consecutive EEG epochs, denoted
+,  where each individ
+331 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 5.1: Notation used throughout Chapter 5
+332 TABLE 12x2 | Symbol / Meaning
+334 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The pipeline is trained in two distinct stages, consistent with the training procedure underlying th
+335 Normal CENTER (1) sz=[] b=[None] ls=1.5 fi=None   IMG | 
+336 Normal JUSTIFY (3) sz=[12.0] b=[True] ls=1.5 fi=None    | Fig. 1. Overall architecture of the proposed G-TransSleep framework for graph-aware self-supervised 
+338 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.2 Dataset Standardization Module
+339 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Because Contribution 4.6 requires the trained model to be deployable against a target dataset it was
+341 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.2.1 Band-Pass Filtering
+342 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Raw EEG entering the pipeline is filtered using a zero-phase Butterworth band-pass filter of order n
+344 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | and the band-pass behaviour of the module as a whole is obtained by cascading a high-pass stage eval
+346 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.2.2 Resampling
+347 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Because different source datasets record EEG at different native sampling rates, Sleep-EDF at 100 Hz
+349 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  denotes the recording's native sampling rate and the summation is truncated to a finite-lengt
+351 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.2.3 Z-Score Normalization
+352 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Following resampling, each channel is normalized independently on a per-recording basis to remove am
+354 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where ​ and ​ denote the mean and standard deviation of channel c computed over the entire recording
+356 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.2.4 Channel Mapping
+357 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Source datasets differ not only in sampling rate and amplitude scale but in which physical electrode
+359 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.2.5 Output Representation
+360 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The Dataset Standardization Module as a whole outputs two objects jointly: the standardized tensor
+ 
+362 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.3 Multi-Scale Temporal CNN Encoder
+363 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The standardized tensor  produced by the module described in Section 5.2 still consists of raw, if c
+365 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.3.1 Parallel Multi-Scale Convolutional Branches
+366 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Each of the three parallel branches applies a standard one-dimensional convolution independently alo
+367 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    |  (12)
+368 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  denotes the i-th input channel to layer ,  is the learnable convolutional kernel connecting i
+370 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.3.2 Concatenation and Feature Fusion
+371 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Once each of the three branches has produced its own scale-specific feature map for a given epoch, t
+374 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where ∥ denotes concatenation along the feature axis, and this fused per-epoch vector is computed in
+376 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.3.3 Output Representation
+377 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The output of the Multi-Scale Temporal CNN Encoder is the temporal feature representation , one -dim
+379 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.4 Graph-Aware Self-Supervised Learning
+380 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The channel-resolved temporal representation  produced by the encoder in Section 5.3 still treats ea
+382 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.4.1 Learnable Graph Construction
+383 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The first component of this module constructs a channel-level graph in which each of the  EEG channe
+385 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where the softmax normalization in the denominator ensures each row of A forms a valid probability d
+387 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.4.2 Masked Reconstruction
+388 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The second component trains the graph structure and the underlying temporal representation jointly b
+391 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  is a learnable weight matrix shared across all nodes at layer l, and stacking multiple such l
+394 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  denotes the set of masked node indices for a given forward pass, and this objective forces bo
+396 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.4.3 Contrastive Learning
+397 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The third component addresses a limitation of the masked-reconstruction objective in isolation, name
+400 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where ​ and ​ denote the representations of the positive pair,  is cosine similarity,  is a temperat
+402 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.4.4 Joint Self-Supervised Objective
+403 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The two objectives introduced above are not optimized separately or in alternating phases but are co
+405 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  is a weighting hyperparameter controlling the relative contribution of the contrastive term, 
+407 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.5 Graph-Temporal Attention Block
+408 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The representation produced by the Graph-aware Self-Supervised Learning module described in Section 
+410 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.5.1 Graph Attention for Spatial Modelling
+411 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The graph attention sub-layer refines the channel-level representation produced by Section 5.4 by al
+413 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  is a shared learnable linear transformation applied to every node's representation before att
+415 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | and this formulation is preferred over directly reusing the static weights in  because it allows the
+417 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.5.2 Temporal Attention for Sequential Modelling
+418 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Following spatial refinement, the temporal attention sub-layer models dependencies across the  epoch
+420 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where , , and  are query, key, and value matrices obtained through learned linear projections of the
+422 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.5.3 Residual Connection and Normalization
+423 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The outputs of the two attention sub-layers are combined with their respective inputs through residu
+425 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | applied separately after the graph attention sub-layer and again after the temporal attention sub-la
+427 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.5.4 Output Representation
+428 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The output of the Graph-Temporal Attention Block is the fused representation , in which each of the 
+430 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.6 Multi-Horizon Transition Decoder
+431 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The fused representation  produced by the Graph-Temporal Attention Block in Section 5.5 has, by this
+433 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.6.1 Dilated Causal Convolution
+434 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The first stage of the decoder applies a stack of one-dimensional dilated causal convolutions to the
+436 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  is the kernel size, ​ are the learnable filter weights, and the summation indexes only backwa
+438 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.6.2 Recurrent Integration
+439 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The output of the dilated causal convolution stage is a sequence of feature vectors spanning the cau
+442 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where ​ and ​ denote the update and reset gates respectively, ​ is the dilated-convolution output at
+444 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.6.3 Three-Head Output Projection
+445 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The final hidden state hT​ produced by the recurrent integration stage is passed through three paral
+447 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  and  are horizon-specific learnable parameters while  ​ itself, the input to all three heads,
+449 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where denotes standard categorical cross-entropy and ​ is a horizon-specific weighting coefficient, 
+451 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where is a further weighting coefficient controlling how strongly the self-supervised objective cont
+453 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.7 Confidence and Explainability Module
+454 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The three output distributions ​, ​, and ​ produced by the decoder in Section 5.6 are each softmax d
+456 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.7.1 Temperature Scaling
+457 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Given the raw logits  produced immediately before the softmax operation in each of the three output 
+459 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  softens the distribution, reducing the magnitude of the maximum predicted probability without
+461 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where predictions are partitioned into B confidence bins ​,  is the empirical accuracy of prediction
+463 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.7.2 Transition Confidence Score
+464 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | While temperature scaling recalibrates the distribution's overall sharpness, it does not by itself p
+466 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  is the temperature-scaled maximum class probability,  denotes the Shannon entropy of the pred
+468 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.7.3 Attention Map Visualization
+469 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The final component of this module surfaces the internal attention weights computed during the forwa
+471 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.8 Cross-Dataset Calibration and Inference
+472 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The seven preceding sections have together described a complete pipeline trained once on a source da
+474 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 5.9 Chapter Summary
+475 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This chapter has presented the complete G-TransSleep architecture as a seven-stage pipeline, moving 
+480 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 6
+481 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    |                          RESULTS AND DISCUSSION
+482 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Chapters 3 through 5 defined the forecasting problem, stated the contributions of this work, and pre
+484 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.1 Experimental Setup
+485 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The experimental design follows the subject-independent evaluation constraint stated in Section 3.3.
+487 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.1.1 Datasets and Subject Partitioning 
+488 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The primary experiments use Sleep-EDF recordings [25] comprising 72 subjects, partitioned at the sub
+489 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The official evaluation, which produces the full-model results of Section 6.2, contains 50,532 test 
+490 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The ISRUC-Sleep data [27] serve exclusively as an external test set. Seventeen subjects were used (s
+492 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.1.2 Implementation and Training Configuration
+493 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | All architectural hyperparameters follow the formulation of Chapter 5 and are listed in Table 6.1. T
+495 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.1: Architecture and training configuration of the evaluated model
+496 TABLE 20x3 | Group / Parameter / Value
+498 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Self-supervised pretraining was kept short, using 10,000 unlabelled windows for 3 epochs at a batch 
+499 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Fine-tuning ran for 12 epochs at a batch size of 64 with a peak learning rate of 0.001 under a OneCy
+501 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.1.3 Evaluation Metrics
+502 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Classification performance at each horizon  is reported using accuracy, macro-averaged F1, and Cohen
+503 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  and  denote the precision and recall of class $c$. Equal weighting is used because Wake and N
+504 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | where  is the observed agreement and  is the chance agreement computed from the marginal class distr
+505 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Calibration is reported as the Expected Calibration Error defined in Section 5.7.1, which measures t
+506 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Forecasting quality at the transition boundary is assessed through binary transition detection. For 
+507 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | and transition accuracy is the fraction of windows for which  with the area under the ROC curve (AUR
+508 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | Two different transition measures exist in this work and they are not interchangeable. The official 
+510 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.1.4 Ablation and Cross-Dataset Protocols
+511 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Five component ablations were conducted at inference time on the trained baseline checkpoint. Indivi
+513 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.2: Definition of the ablation variants
+514 TABLE 7x3 | ID / Variant / Modification
+516 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This protocol has a specific interpretive consequence that the analysis in Section 6.4 respects. The
+517 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The external evaluation on ISRUC-Sleep follows the strictest available protocol. The trained model w
+519 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.2 Full-Model Performance on Sleep-EDF
+520 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This section reports the performance of the trained G-TransSleep model on the 11 held-out Sleep-EDF 
+522 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.2.1 Multi-Horizon Classification Performance
+523 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.3 reports accuracy, macro-F1, and Cohen's kappa at each horizon for the official evaluation.
+525 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.3: Multi-horizon classification performance of the full model (official evaluation, 50,532 w
+526 TABLE 5x4 | Horizon / Accuracy / Macro-F1 / Cohen's κ
+528 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The cost of forecasting is modest and close to linear in the horizon. Moving from H0 to H1 reduces a
+529 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A high forecasting accuracy at H1 and H2 does not by itself show that the model anticipates transiti
+531 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.2.2 Per-Class Performance at the Current Epoch
+532 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.4 lists the F1 score of each stage at H0. Wake is classified almost perfectly with an F1 of 
+534 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.4: Per-class F1 of the full model at H0
+535 TABLE 6x2 | Stage / F1
+537 Normal None sz=[12.0] b=[None] ls=1.5 fi=226695    | Two features of this profile deserve comment. N1 is the lowest-scoring stage, as in every method rev
+539 Normal None sz=[16.0] b=[True] ls=1.5 fi=None    | 6.2.3 Calibration, Transition Scoring, and Computational Cost
+540 Normal None sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.5 collects the remaining metrics of the official evaluation. The Expected Calibration Error 
+542 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.5: Calibration, transition-score, and efficiency metrics of the full model
+543 TABLE 7x2 | Metric / Value
+545 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The Expected Calibration Error of the full model is 0.0313, computed after temperature scaling with 
+546 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The computational cost is low. Batched inference takes 0.318 ms per sample, and the latency for a si
+548 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.3 Temporal Transformer Block
+549 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The temporal Transformer block sits between the graph attention stage and the multi-horizon decoder,
+550 Normal JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=None   IMG | 
+551 Normal JUSTIFY (3) sz=[12.0] b=[True] ls=1.5 fi=None    | Figure 2: Temporal_Transformer_Block_Schematic.png. Caption: Temporal Transformer block of the imple
+553 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.3.1 Reshaping and Linear Projection
+554 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The graph attention stage produces a feature vector of dimension d = 64 for each of the two channels
+555 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | so that is the input to the first encoder layer. In the present configuration equals the model dimen
+556 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Channel identity is preserved in this design because each channel occupies a fixed segment of the co
+558 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.3.2 Causally Masked Multi-Head Self-Attention
+559 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Each encoder layer begins with multi-head self-attention over the five tokens. With four heads and a
+561 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | and the head output is
+563 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Where  is the causal mask. The outputs of the four heads are concatenated and projected back to dime
+564 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The mask has entries for  and  otherwise, so that the softmax assigns zero weight to every position 
+566 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.3.3 Feed-Forward Network, Residual Connections, and Normalisation
+567 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The attention output is combined with the layer input through a residual connection after dropout, a
+569 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | A position-wise feed-forward network is then applied independently to each token, consisting of a li
+571 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | and it is wrapped in the same dropout, residual, and normalisation pattern,
+573 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This post-normalisation arrangement follows Section 5.5.3, and the dropout rate is 0.1 as listed in 
+574 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The block stacks two such layers, so that  is the output of the first layer applied to  and  is the 
+576 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.3.4 Role in the Trained Network
+577 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Within the implemented pipeline this block is the first stage at which information from the five epo
+578 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The same reasoning offers a hypothesis for the weak effects of removing the decoder's causal convolu
+580 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.4 Ablation Study
+581 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The ablation study examines how the trained model depends on each architectural component by bypassi
+583 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.4.1 Effects on Stage Classification
+584 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | Table 6.6 lists accuracy and macro-F1 at each horizon, their means, and the change in mean macro-F1 
+586 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.6: Stage classification performance of the ablation variants
+587 TABLE 7x11 | Variant / H0 Acc / H0 MF1 / H1 Acc / H1 MF1 / H2 Acc / H2 MF1 / Mean Acc / Mean MF1 / Δ Mean MF1 / Δ (%)
+589 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Apart from A3, every variant stays within 0.010 of the baseline in mean accuracy and within 0.004 in
+590 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Bypassing the graph attention layer (A2) raises accuracy at all three horizons, by 0.0082, 0.0088, a
+591 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Bypassing the temporal Transformer (A3) reduces mean accuracy to 0.0543 and mean macro-F1 to 0.0478,
+592 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The two decoder ablations leave classification essentially intact. Removing the causal convolution (
+594 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.4.2 Effects on Transition Detection
+595 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.7 reports binary transition detection as defined in Section 6.1.3, together with the number 
+597 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.7: Binary transition detection of the ablation variants
+598 TABLE 8x7 | Variant / H1 Det. Acc / H1 AUROC / H1 Predicted / True / H2 Det. Acc / H2 AUROC / H2 Predicted / True
+600 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The reference row changes how the detection accuracies should be read. The baseline scores 0.9192 at
+601 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Because the accuracy, the number of true transitions, and the number of predicted transitions are al
+603 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=226695    | Table 6.8: Detection quality derived from the counts in Table 6.7
+604 TABLE 7x9 | Variant / H1 TP / H1 Recall / H1 Precision / H1 F1 / H2 TP / H2 Recall / H2 Precision / H2 F1
+606 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | At its default operating point the baseline detects 284 of the 2,270 transitions at H1 (recall 0.125
+607 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The variants differ in informative ways on this measure. Bypassing the temporal Transformer (A3) pre
+609 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.4.3 Summary of Ablation Findings
+610 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Four conclusions follow from the ablation, each limited by its protocol. First, the trained network 
+611 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Four extensions would strengthen these results and are discussed in Section 6.7. Retraining each var
+613 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.5 Cross-Dataset Evaluation on ISRUC-Sleep
+614 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This section reports the evaluation of the trained model on ISRUC-Sleep under the protocol of Sectio
+616 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.5.1 Classification Performance
+617 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.9 reports accuracy, macro-F1, weighted F1, kappa, and ECE at each horizon. At H0 the model r
+619 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.9: Classification performance on ISRUC-Sleep without adaptation (17 subjects, 15,429 epochs)
+620 TABLE 4x6 | Horizon / Accuracy / Macro-F1 / Weighted F1 / Cohen's κ / ECE
+622 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Relative to the official Sleep-EDF figures, accuracy is lower by 0.267 at H0, 0.231 at H1, and 0.208
+623 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The ordering across horizons is the reverse of the one seen on Sleep-EDF. Accuracy and kappa rise fr
+625 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.5.2 Per-Class Behaviour
+626 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.10 gives the per-class F1 scores. Wake, N2, and REM improve with horizon, while N1 falls ste
+627 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=226695    | Table 6.10: Per-class F1 on ISRUC-Sleep without adaptation
+628 TABLE 4x6 | Horizon / Wake / N1 / N2 / N3 / REM
+630 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The comparison with the H0 results on Sleep-EDF is informative. Wake falls by 0.188, N2 by 0.166, N1
+632 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.5.3 Calibration Under Distribution Shift
+633 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The ECE on ISRUC is 0.0995 at H0, 0.0664 at H1, and 0.0577 at H2. For comparison, the official Sleep
+635 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.5.4 Summary and Limits of the External Evaluation
+636 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The external evaluation shows that the trained checkpoint can be applied to an unseen dataset with n
+638 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.6 Comparison with Existing Methods
+639 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This section places the results of the proposed model beside those of the methods reviewed in Chapte
+641 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.6.1 Current-Epoch Classification on Sleep-EDF
+642 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.11 lists the Sleep-EDF results of the surveyed methods together with the H0, H1, and H2 resu
+644 Normal CENTER (1) sz=[12.0] b=[True] ls=1.5 fi=None    | Table 6.11: Comparison with surveyed methods on Sleep-EDF
+645 TABLE 17x8 | Method / Ref. / Dataset / Acc. / Macro-F1 / κ / N1 F1 / Context and protocol note
+647 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | On accuracy the proposed model is competitive. Its H0 accuracy of 0.8807 is above the values reporte
+648 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | On the class-balanced measures the picture is less favourable and should be stated as it is. The mac
+649 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Several design differences are consistent with this pattern, although none was isolated experimental
+651 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.6.2 Forecasting at Future Horizons
+652 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | No surveyed method reports its performance at one or two epochs ahead of the observed window, so the
+653 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The results at H1 and H2 should therefore be read against the proposed model's own H0 results and ag
+655 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.6.3 Cross-Dataset Comparison on ISRUC-Sleep
+656 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Table 6.12 compares the external result of the proposed model with the ISRUC-Sleep figures of three 
+658 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.6.4 Summary of the Comparison
+659 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The comparison supports three statements and withholds two. The proposed model reaches an H0 accurac
+661 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.7 Discussion and Limitations
+662 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This section draws the results of the chapter together and states what they do and do not demonstrat
+664 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.7.1 Interpretation of Findings
+665 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The central result is that the forecasting formulation of Chapter 3 can be met by a model that sees 
+666 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The transition-level analysis separates what the model does from what it does not do. The ablation b
+667 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The ablation identifies which parts of the trained network carry the result. The temporal Transforme
+668 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The weak stages in both datasets follow the pattern known from the literature. N1 has the lowest F1 
+670 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.7.2 Limitations
+671 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The statistical support for the results is limited. Every experiment uses one training run with seed
+672 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | Several analyses that a complete evaluation would include are absent. There is no persistence baseli
+673 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | The scope of the study is narrow in three respects. The checkpoint is tied to a two-channel configur
+675 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.7.3 Directions for Future Work
+676 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=227965    | The most direct improvement concerns the weak points identified above. Choosing the decision thresho
+677 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=227965    | A second group of experiments would strengthen the evidence for the design itself. Retraining each a
+679 Normal JUSTIFY (3) sz=[16.0] b=[True] ls=1.5 fi=None    | 6.8 Chapter Summary
+680 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This chapter evaluated the G-TransSleep model on held-out Sleep-EDF subjects, examined its dependenc
+684 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    | CHAPTER 7
+685 Normal CENTER (1) sz=[16.0] b=[True] ls=19050 fi=None    |                              CONCLUSION
+686 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=226695    | This report addressed sleep staging as a forecasting problem, in which the stage of an epoch that ha
+699 Normal JUSTIFY (3) sz=[17.0] b=[True] ls=1.5 fi=226695    |                     REFERENCES
+700 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [1] G. Kong, X. Liu, and J. Wu, "EEG-Based Sleep Stage Classification via Neural Architecture Search
+701 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [2] L. Shi, L. Qi, and Y. Wang, "A Novel Sleep Staging Network Based on Data Adaptation and Multimod
+702 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [3] F. Yilmaz and A. Subasi, "EEG Sleep Stage Classification with Continuous Wavelet Transform and D
+703 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [4] X. Zhang, J. Ma, K. Liu, W. Chen, K. Ding, S. Yang, F. Li, and F. Cong, "A Hybrid Deep Learning 
+704 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [5] D.-K. Lee, S.-A. Lee, and J.-H. Jeong, "SleepTNet: Automatic Sleep Stage Classification With Tra
+705 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [6] J. Zhou, G. Wang, J. Liu, D. Wu, and W. Xu, "Deep Learning Automatic Sleep Staging Method Based 
+706 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [7] L. Shi, L. Qi, and Y. Wang, "An Interpretable Single-Channel EEG Sleep Staging Model Based on Pr
+707 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [8] W. Li, T. Liu, B. Xu, and A. Song, "SleepFC: Feature Pyramid and Cross-Scale Context Learning fo
+708 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [9] H. Zhu, Y. Wu, Y. Guo, C. Fu, F. Shu, H. Yu, W. Chen, and C. Chen, "Towards Real-Time Sleep Stag
+709 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [10] M. A. H. Khan, M. S. Islam, and M. R. Islam, "EEG Sleep Stages Prediction: A Hybrid LSTM and Ra
+710 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [11] S. R. Sahoo, A. K. Biswal, and S. S. Tripathy, "A Hybrid Deep Learning Framework for Sleep Stag
+711 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [12] C. Wan, M. C. Nnamdi, W. Shi, B. Smith, C. Purnell, and M. D. Wang, "Advancing Sleep Disorder D
+712 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [13] C. Chen, H. Zhu, Y. Wang, C. Fu, F. Shu, and Y. Wu, "StApneaNet: A Deep Learning-Based Automati
+713 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [14] A. Kuhlmann, K. Lehnertz, B. Schelter, and C. E. Elger, "Classifier Combination Supported by th
+714 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [15] J. Zhou, G. Wang, J. Liu, D. Wu, W. Xu, Z. Wang, J. Ye, M. Xia, Y. Hu, and Y. Tian, "Automatic 
+715 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [16] N. D. Truong, A. D. Nguyen, L. Kuhlmann, M. R. Bonyadi, J. Yang, S. Ippolito, and O. Kavehei, "
+716 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [17] R. Bibo, A. B. M. S. U. Doulah, and M. S. A. Biswas, "Patient-Specific Seizure Prediction Based
+717 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [18] Y. Zhang, X. Li, Y. Liu, and Z. Zhang, "GMAEEG: A Self-Supervised Graph Masked Autoencoder for 
+718 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [19] H. Wang, L. Zhang, Y. Zhao, and X. Zhou, "DSSNet: A Deep Sequential Sleep Network for Self-Supe
+719 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [20] S. Liu, P. Zhang, and X. Wang, "NeuroNet: A Novel Hybrid Self-Supervised Learning Framework for
+720 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [21] Z. Chen, J. Yang, and L. Zhao, "GMSS: Graph-Based Multi-Task Self-Supervised Learning for EEG E
+721 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [22] X. Wu, Y. Chen, and H. Wang, "SleepDG: Domain Generalization for Generalizable Sleep Staging Ac
+722 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [23] L. Zhang, M. Liu, and J. Zhao, "STDA-Net: Spectrogram-Based Domain Adaptation for Cross-Dataset
+723 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [24] R. Guo, T. Sun, and K. Li, "Cross-Dataset Sleep Stage Scoring via Domain-Adversarial Graph Neur
+724 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [25] P. L. J. van den Broek, J. H. M. van Laarhoven, and L. M. A. Braam, "Analysis of a Sleep-Depend
+725 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [26] S. O. Carrier, J.-M. Lina, T. T. Dang-Vu, J. Doyon, S. R. J. Brisson, et al., "Montreal Archive
+726 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [27] S. Khalighi, T. Sousa, G. Santos, and U. Freitas, "ISRUC-Sleep: A Comprehensive Public Dataset 
+727 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [28] M. G. Terzano, L. Parrino, A. Smerieri, R. Chokroverty, S. Chokroverty, et al., "Atlas, Rules, 
+728 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [29] M. Vainikka, R. Huttunen, S. Kainulainen, H. Korkalainen, and M. Rusanen, "Direct Quantificatio
+729 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [30] H. Alsolai, S. Qureshi, S. M. Z. Iqbal, S. Vanichayobon, L. E. Henesey, C. Lindley, and S. Karr
+730 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [31] S. Fallmann and L. Chen, "Computational Sleep Behavior Analysis: A Survey," IEEE Access, vol. 7
+731 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [32] A. Müller, M. Scheibl, T. Uhe, W.-R. Schäbitz, and B. Wrede, "Application of Graph Neural Netwo
+732 Normal JUSTIFY (3) sz=[12.0] b=[None] ls=1.5 fi=None    | [33] O. Hanosh, R. Ansari, K. Younis, and A. E. Cetin, "Real-Time Epileptic Seizure Detection During
+755 Normal CENTER (1) sz=[17.0] b=[True] ls=1.5 fi=None    | APPENDIX A
+756 Body Text CENTER (1) sz=[16.0] b=[True] ls=1.5 fi=None    | CODING  
+760 Normal CENTER (1) sz=[16.0] b=[True] ls=1.5 fi=None    | APPENDIX B
+761 Body Text CENTER (1) sz=[16.0] b=[True] ls=1.5 fi=None    | JOURNAL PAPER SUBMISSION
+763 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=None    | We have submitted our research paper titled “” to the journal under Springer. The manuscript has bee
+764 Body Text JUSTIFY (3) sz=[] b=[None] ls=1.5 fi=None    | The paper is currently under the editorial and peer review process. The submission confirmation emai
+769 Heading 5 CENTER (1) sz=[] b=[False] ls=19050 fi=None    | Figure B.1: Submission Notification
+772 Heading 5 CENTER (1) sz=[] b=[False] ls=19050 fi=0    | Figure B.2: First Page Of Journal Paper Manuscript
+776 Normal CENTER (1) sz=[17.0] b=[True] ls=1.5 fi=None    | APPENDIX C
+777 Body Text CENTER (1) sz=[16.0] b=[True] ls=1.5 fi=None    | PLAGARISM REPORT
+779 Normal CENTER (1) sz=[12.0] b=[None] ls=19050 fi=None    | Figure B.1: Plagarism Report Evaluated on Turnitin
+780 sectPr

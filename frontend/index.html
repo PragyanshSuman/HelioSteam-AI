@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelioSteam — Next-Gen Solar Steam Forecasting &amp; AI LPG Optimization</title>
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- GSAP 3 for Smooth Spring & Timeline Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Ambient Living Solar Aurora Mesh Background -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="aurora-blob blob-solar"></div>
+    <div class="aurora-blob blob-emerald"></div>
+    <div class="aurora-blob blob-sky"></div>
+    <div class="ambient-grid-mask"></div>
+  </div>
+
+  <!-- Floating Glassmorphic Top Header -->
+  <header class="top-header">
+    <div class="brand-block">
+      <div class="brand-logo">
+        <svg class="sun-spin-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4.5" fill="#d97706" stroke="#d97706"/>
+          <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="#059669" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-title-row">
+          <h1 class="brand-title">HelioSteam</h1>
+          <span class="plant-badge"><i class="dot-live"></i> Solar Steam &amp; AI LPG Control</span>
+        </div>
+        <p class="brand-subtitle">Predictive Solar Steam Forecasting &amp; Intelligent LPG Reduction Platform</p>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <button class="pill pill-tour magnetic-btn" id="startGuidedTourBtn" title="Replay the interactive character walkthrough">
+        <span>🎮</span>
+        <span>Interactive Guide Tour</span>
+      </button>
+
+      <div class="active-day-pill spotlight-card">
+        <span class="ad-label">Operating Date</span>
+        <strong id="headerActiveDateText">2026-07-16</strong>
+        <span class="kpi-tag" id="headerRegimeBadge">Clear Sky</span>
+      </div>
+
+      <button class="pill pill-llm magnetic-btn" id="openLlmModalBtn" title="AI Connection Settings">
+        <span class="dot-live"></span>
+        <span id="headerLlmBadge">Groq AI Live</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Motion.dev-Style Animated Stepper Navigation Bar -->
+  <div class="stepper-bar-wrap">
+    <nav class="stepper-nav" id="workspaceSwitcher">
+      <button class="step-btn active" data-view="view-step1" data-step-idx="1">
+        <span class="step-num">01</span>
+        <div class="step-text">
+          <strong>Select Day &amp; Challenges</strong>
+          <span>Weather profile &amp; stress tests</span>
+        </div>
+      </button>
+
+      <div class="step-connector"><div class="step-connector-fill" id="connFill1"></div></div>
+
+      <button class="step-btn" data-view="view-step2" data-step-idx="2">
+        <span class="step-num">02</span>
+        <div class="step-text">
+          <strong>Solar Steam Forecast</strong>
+          <span>24h curve &amp; daily story view</span>
+        </div>
+      </button>
+
+      <div class="step-connector"><div class="step-connector-fill" id="connFill2"></div></div>
+
+      <button class="step-btn" data-view="view-step3" data-step-idx="3">
+        <span class="step-num">03</span>
+        <div class="step-text">
+          <strong>LPG Savings &amp; Schedule</strong>
+          <span>Boiler OFF hours &amp; fuel cut</span>
+        </div>
+      </button>
+
+      <div class="step-connector"><div class="step-connector-fill" id="connFill3"></div></div>
+
+      <button class="step-btn" data-view="view-step4" data-step-idx="4">
+        <span class="step-num">04</span>
+        <div class="step-text">
+          <strong>AI Advisor &amp; Action Plan</strong>
+          <span>Live Groq AI &amp; shift checklist</span>
+        </div>
+      </button>
+
+      <div class="step-divider"></div>
+
+      <button class="step-btn step-btn-advanced" data-view="view-advanced" data-step-idx="5">
+        <span class="step-num">&#x2713;</span>
+        <div class="step-text">
+          <strong>Model &amp; Data Proof</strong>
+          <span>R² accuracy &amp; CSV batch test</span>
+        </div>
+      </button>
+    </nav>
+  </div>
+
+  <!-- =========================================================================
+       PERSISTENT INLINE CHARACTER COMPANION BAR ("HELIO" GUIDE BANNER)
+       ========================================================================= -->
+  <div class="companion-guide-wrap">
+    <div class="companion-guide-bar spotlight-card" id="inlineCompanionBar">
+      <div class="cg-avatar-box" id="inlineCharacterAvatar"></div>
+      <div class="cg-dialogue-box">
+        <div class="cg-header-row">
+          <span class="cg-name-badge">HELIO &bull; CHIEF SOLAR ENGINEER GUIDE</span>
+          <span class="cg-quest-tag" id="companionStepBadge">MISSION STEP 1 OF 4</span>
+        </div>
+        <p class="cg-speech-text" id="companionSpeechText">
+          Welcome aboard! Pick a weather card below or click a Stress-Test Challenge Card—I'll explain everything step by step!
+        </p>
+      </div>
+      <div class="cg-actions">
+        <button class="btn-secondary btn-sm" id="companionTourTriggerBtn">
+          🎯 Show Me Around
+        </button>
+        <button class="btn-primary btn-sm magnetic-btn" id="companionNextActionBtn">
+          Next Mission &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Animated Workspace -->
+  <main class="main-container">
+
+    <!-- =====================================================================
+         STEP 1: SELECT DAY & STRESS-TEST CHALLENGES
+         ===================================================================== -->
+    <div id="view-step1" class="workspace-view active">
+
+      <!-- Bento Hero Card with Live Animated Solar-to-Steam Energy Flow SVG -->
+      <div class="hero-welcome-card spotlight-card anim-stagger" id="tourTargetHero">
+        <div class="hero-welcome-content">
+          <div class="eyebrow-row">
+            <span class="step-eyebrow">STEP 01 &bull; QUICK PLANT SETUP</span>
+            <span class="live-chip"><i class="dot-live"></i> Live Plant Telemetry</span>
+          </div>
+          <h2>Predict Solar Steam &amp; Cut LPG Boiler Fuel</h2>
+          <p>
+            Pick a weather day or click a 1-click challenge below to see how much LPG fuel you save today.
+          </p>
+
+          <!-- Animated Live Energy Flow Diagram -->
+          <div class="energy-flow-widget">
+            <div class="ef-node ef-solar">
+              <span class="ef-icon">☀️</span>
+              <div>
+                <small>SOLAR STEAM</small>
+                <strong id="step1QuickSteam">931.4 tons</strong>
+              </div>
+            </div>
+
+            <div class="ef-pipe">
+              <svg viewBox="0 0 90 24" class="ef-pipe-svg">
+                <line x1="0" y1="12" x2="90" y2="12" stroke="#d5e3da" stroke-width="3" stroke-linecap="round" />
+                <line x1="0" y1="12" x2="90" y2="12" stroke="#d97706" stroke-width="3" stroke-dasharray="6 8" class="ef-flow-pulse" />
+              </svg>
+              <span class="ef-pipe-label">Replaces LPG</span>
+            </div>
+
+            <div class="ef-node ef-lpg">
+              <span class="ef-icon">🔥</span>
+              <div>
+                <small>LPG SAVED</small>
+                <strong id="step1QuickLpg">24,966 kg</strong>
+              </div>
+            </div>
+
+            <div class="ef-pipe">
+              <svg viewBox="0 0 90 24" class="ef-pipe-svg">
+                <line x1="0" y1="12" x2="90" y2="12" stroke="#d5e3da" stroke-width="3" stroke-linecap="round" />
+                <line x1="0" y1="12" x2="90" y2="12" stroke="#059669" stroke-width="3" stroke-dasharray="6 8" class="ef-flow-pulse" />
+              </svg>
+              <span class="ef-pipe-label">Money Saved</span>
+            </div>
+
+            <div class="ef-node ef-cost">
+              <span class="ef-icon">🌱</span>
+              <div>
+                <small>DAILY SAVINGS</small>
+                <strong id="step1QuickCost">$22,969</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-date-card">
+          <span class="hd-label">ACTIVE PLANT DATE (2025 – 2027)</span>
+          <div class="hd-date" id="step1QuickDate">2026-07-16</div>
+          <div class="btn-group" id="yearQuickSwitcher" style="margin-top:8px;">
+            <button type="button" class="btn-toggle" data-year="2025">2025</button>
+            <button type="button" class="btn-toggle active" data-year="2026">2026</button>
+            <button type="button" class="btn-toggle" data-year="2027">2027</button>
+          </div>
+          <div class="date-picker-inline" style="margin-top:8px;">
+            <button id="prevDayBtn" class="btn-icon" title="Previous Day">&larr;</button>
+            <input type="date" id="globalDateInput" min="2025-01-01" max="2027-12-31" value="2026-07-16" />
+            <button id="nextDayBtn" class="btn-icon" title="Next Day">&rarr;</button>
+          </div>
+          <button class="btn-primary btn-block" style="margin-top:10px;" data-goto-step="view-step2">
+            See Steam Forecast &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Interactive Weather Preset Bento Cards -->
+      <div class="panel-card spotlight-card anim-stagger" id="tourTargetWeatherCards">
+        <div class="panel-header">
+          <div>
+            <h3>1. Pick a Weather Day</h3>
+            <p class="panel-subtitle">Choose one of 4 sample days to load real plant data</p>
+          </div>
+          <button class="btn-helio-help" data-help-topic="weather-choice">
+            🤔 Which day should I pick?
+          </button>
+        </div>
+
+        <div class="weather-preset-grid" id="weatherPresetCards">
+          <div class="weather-card spotlight-card active" data-date="2026-07-16" data-mmdd="07-16">
+            <div class="wc-icon-wrap">☀️</div>
+            <div class="wc-body">
+              <div class="wc-top-row">
+                <strong>Sunny Summer</strong>
+                <span class="wc-date-pill">Jul 16</span>
+              </div>
+              <span>931 tons steam</span>
+              <div class="wc-bestfor-tag tag-green">★ Max Savings</div>
+            </div>
+          </div>
+
+          <div class="weather-card spotlight-card" data-date="2026-06-21" data-mmdd="06-21">
+            <div class="wc-icon-wrap">🌞</div>
+            <div class="wc-body">
+              <div class="wc-top-row">
+                <strong>Long Daylight</strong>
+                <span class="wc-date-pill">Jun 21</span>
+              </div>
+              <span>745 tons steam</span>
+              <div class="wc-bestfor-tag tag-amber">🔋 Max Storage</div>
+            </div>
+          </div>
+
+          <div class="weather-card spotlight-card" data-date="2026-03-22" data-mmdd="03-22">
+            <div class="wc-icon-wrap">🌤️</div>
+            <div class="wc-body">
+              <div class="wc-top-row">
+                <strong>Spring Day</strong>
+                <span class="wc-date-pill">Mar 22</span>
+              </div>
+              <span>390 tons steam</span>
+              <div class="wc-bestfor-tag tag-blue">🌱 Average Day</div>
+            </div>
+          </div>
+
+          <div class="weather-card spotlight-card" data-date="2026-10-23" data-mmdd="10-23">
+            <div class="wc-icon-wrap">⛅</div>
+            <div class="wc-body">
+              <div class="wc-top-row">
+                <strong>Cloudy Autumn</strong>
+                <span class="wc-date-pill">Oct 23</span>
+              </div>
+              <span>215 tons steam</span>
+              <div class="wc-bestfor-tag tag-purple">☁️ Low-Sun Test</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game-Style "Stress-Test Challenge Cards" (Short & Sweet) -->
+      <div class="panel-card spotlight-card anim-stagger" id="tourTargetSimSliders">
+        <div class="panel-header">
+          <div>
+            <h3>2. Test a "What-If" Scenario (1-Click)</h3>
+            <p class="panel-subtitle">Click a scenario card to test storms, dust, or high factory demand</p>
+          </div>
+          <div class="btn-row">
+            <button class="btn-helio-help" data-help-topic="what-if-help">
+              🤔 Ask Helio
+            </button>
+            <button class="btn-secondary btn-sm" id="toggleCustomSlidersBtn">
+              🎛️ Custom Sliders ▾
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 Clean, Compact Challenge Cards -->
+        <div class="challenge-cards-grid" id="challengeCardsGrid">
+          <div class="challenge-card spotlight-card active" data-challenge="normal">
+            <div class="cc-top">
+              <span class="cc-icon">☀️</span>
+              <span class="cc-badge">DEFAULT</span>
+            </div>
+            <div class="cc-title">Normal Weather</div>
+            <div class="cc-desc">Expected sun &amp; normal 28 t/h load.</div>
+            <div class="cc-settings-pill">100% Sun &bull; 28 t/h</div>
+          </div>
+
+          <div class="challenge-card spotlight-card" data-challenge="cloud_ambush">
+            <div class="cc-top">
+              <span class="cc-icon">⛈️</span>
+              <span class="cc-badge">TEST 01</span>
+            </div>
+            <div class="cc-title">12 PM Cloud Storm</div>
+            <div class="cc-desc">Storm blocks 60% sun from 12–3 PM.</div>
+            <div class="cc-settings-pill">12–15h Clouds &bull; 28 t/h</div>
+          </div>
+
+          <div class="challenge-card spotlight-card" data-challenge="dusty_mirrors">
+            <div class="cc-top">
+              <span class="cc-icon">🌪️</span>
+              <span class="cc-badge">TEST 02</span>
+            </div>
+            <div class="cc-title">Dusty Mirrors</div>
+            <div class="cc-desc">Dust cuts mirror sunlight by 25%.</div>
+            <div class="cc-settings-pill">75% Sun &bull; 28 t/h</div>
+          </div>
+
+          <div class="challenge-card spotlight-card" data-challenge="rush_order">
+            <div class="cc-top">
+              <span class="cc-icon">📈</span>
+              <span class="cc-badge">TEST 03</span>
+            </div>
+            <div class="cc-title">Factory Rush Order</div>
+            <div class="cc-desc">Steam demand jumps to 40 tons/hr.</div>
+            <div class="cc-settings-pill">100% Sun &bull; 40 t/h Load</div>
+          </div>
+        </div>
+
+        <!-- Collapsible Manual Sliders for Advanced Users -->
+        <div id="customSlidersDrawer" class="custom-sliders-drawer hidden">
+          <div class="clean-3col-kpis" style="margin-top:8px;">
+            <div class="friendly-slider-card">
+              <div class="fs-top">
+                <label for="simIrrScale">☀️ Sunlight</label>
+                <strong id="simIrrScaleVal" class="mono-val">100% (Normal)</strong>
+              </div>
+              <input type="range" id="simIrrScale" min="40" max="140" step="5" value="100" />
+              <div class="slider-snap-labels">
+                <span>50% Storm</span>
+                <span>75% Dust</span>
+                <span>100% Normal</span>
+                <span>130% Peak</span>
+              </div>
+            </div>
+
+            <div class="friendly-slider-card">
+              <div class="fs-top">
+                <label for="simCloudStart">☁️ Cloud Window</label>
+                <strong id="simCloudImpactBadge" class="mono-val">No Clouds</strong>
+              </div>
+              <select id="simCloudStart" class="clean-select">
+                <option value="-1">No Clouds (Clear)</option>
+                <option value="10">Morning Clouds (10–13h)</option>
+                <option value="12">Midday Clouds (12–15h)</option>
+                <option value="14">Afternoon Clouds (14–17h)</option>
+              </select>
+            </div>
+
+            <div class="friendly-slider-card">
+              <div class="fs-top">
+                <label for="lpgDemandInput">🏭 Factory Demand</label>
+                <strong id="lpgDemandVal" class="mono-val">28.0 tons/hr</strong>
+              </div>
+              <input type="range" id="lpgDemandInput" min="10" max="80" step="2" value="28" />
+              <div class="slider-snap-labels">
+                <span>16 t/h Low</span>
+                <span>28 t/h Normal</span>
+                <span>40 t/h Rush</span>
+                <span>60 t/h Max</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:10px;">
+            <button id="resetAllControlsBtn" class="btn-secondary btn-sm">Reset</button>
+            <button id="applyLiveControlsBtn" class="btn-primary btn-sm">Apply</button>
+          </div>
+        </div>
+
+        <!-- Hidden secondary parameters for API compatibility -->
+        <div style="display:none;">
+          <input type="range" id="lpgStorageCapInput" value="85" />
+          <span id="lpgStorageCapVal">85.0 tons</span>
+          <input type="range" id="lpgEffInput" value="84" />
+          <span id="lpgEffVal">84.0%</span>
+          <select id="lpgProfileSelect"><option value="industrial_2shift" selected>Industrial 2-Shift</option></select>
+          <input type="range" id="lpgEnthalpyInput" value="2.62" />
+          <input type="range" id="lpgStandbyInput" value="42" />
+          <input type="range" id="lpgPriceInput" value="0.92" />
+          <input type="range" id="simTempOffset" value="0" />
+          <input type="range" id="simWindScale" value="100" />
+          <input type="range" id="simFwScale" value="100" />
+          <select id="simCloudEnd"><option value="15" selected>15</option></select>
+          <input type="range" id="simCloudAtten" value="60" />
+        </div>
+
+        <div class="sim-summary-box" id="simResultSummary" style="margin-top:12px;">
+          <div class="sim-stat">
+            <span>Normal Steam</span>
+            <strong id="simBaseTotal">931.4 tons/day</strong>
+          </div>
+          <div class="sim-stat">
+            <span>Scenario Steam</span>
+            <strong id="simNewTotal">931.4 tons/day</strong>
+          </div>
+          <div class="sim-stat">
+            <span>Impact</span>
+            <strong id="simDeltaImpact">Normal Weather Active</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-footer-nav anim-stagger">
+        <div></div>
+        <button class="btn-primary btn-lg magnetic-btn" data-goto-step="view-step2">
+          Next: Solar Steam Forecast &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         STEP 2: DAILY SOLAR STEAM FORECAST (Short, Sweet & Properly Aligned Cards)
+         ===================================================================== -->
+    <div id="view-step2" class="workspace-view">
+      <div class="plain-summary-banner banner-amber spotlight-card anim-stagger">
+        <div>
+          <span class="step-eyebrow">STEP 02 &bull; SOLAR STEAM GENERATION</span>
+          <h2 id="step2Headline">931.4 Tons of Solar Steam Today (Peak 143.6 t/h)</h2>
+          <p id="step2Subtext">
+            Daytime solar steam powers the plant and stores 84.5 tons for the evening.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 Clean, Balanced KPI Cards -->
+      <div class="clean-3col-kpis anim-stagger">
+        <div class="kpi-card kpi-amber spotlight-card">
+          <div class="kpi-header">
+            <span class="kpi-label">TOTAL SOLAR STEAM</span>
+            <span class="kpi-tag">Today</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value" id="kpiDailyForecast">931.4 tons</span>
+          </div>
+          <div class="kpi-sub" id="kpiDailyActualSub">Actual: 932.6 tons</div>
+        </div>
+
+        <div class="kpi-card kpi-emerald spotlight-card">
+          <div class="kpi-header">
+            <span class="kpi-label">MIDDAY PEAK RATE</span>
+            <span class="kpi-tag">Max Output</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value" id="kpiPeakSteam">143.6 tons/hr</span>
+          </div>
+          <div class="kpi-sub">Highest hourly steam output</div>
+        </div>
+
+        <div class="kpi-card kpi-cyan spotlight-card">
+          <div class="kpi-header">
+            <span class="kpi-label">SAVED FOR EVENING</span>
+            <span class="kpi-tag">Storage Tanks</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value" id="kpiStorageChargedStep2">84.5 tons</span>
+          </div>
+          <div class="kpi-sub" id="kpiStorageSub">Extra midday steam banked for sunset</div>
+        </div>
+      </div>
+
+      <!-- 3-Part Daily Summary Cards (Always Properly Placed in 3 Columns!) -->
+      <div id="step2StoryViewWrap" class="story-3col-grid anim-stagger"></div>
+
+      <!-- Interactive 24-Hour Solar Steam Chart -->
+      <div class="panel-card spotlight-card anim-stagger" id="tourTargetSteamChart">
+        <div class="panel-header">
+          <div>
+            <h3>24-Hour Solar Steam Curve (00:00 – 23:00)</h3>
+            <p class="panel-subtitle">Yellow zone = Turn LPG Boiler OFF &bull; Hover any hour for exact steam output</p>
+          </div>
+          <div class="btn-row" style="align-items:center;">
+            <button class="btn-helio-help" data-help-topic="how-to-read-steam-chart">
+              🤔 Explain This Graph
+            </button>
+          </div>
+        </div>
+
+        <div id="step2ChartViewWrap">
+          <div class="legend-inline" id="step2ChartLegend" style="margin-bottom:8px;">
+            <span class="leg-item"><i class="swatch sw-amber"></i>Predicted Solar Steam (t/h)</span>
+            <span class="leg-item"><i class="swatch sw-cyan"></i>Actual Steam (t/h)</span>
+          </div>
+          <div class="chart-box chart-box-tall" id="chartDashboardSteam"></div>
+
+          <!-- Quick Inline Stress-Test Switcher Right Under the Chart -->
+          <div class="inline-challenge-pillbar">
+            <span class="icp-label">⚡ Test Scenario on Graph:</span>
+            <button class="icp-btn active" data-challenge="normal">☀️ Normal</button>
+            <button class="icp-btn" data-challenge="cloud_ambush">⛈️ 12 PM Storm</button>
+            <button class="icp-btn" data-challenge="dusty_mirrors">🌪️ Dusty Mirrors</button>
+            <button class="icp-btn" data-challenge="rush_order">📈 Rush Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-footer-nav anim-stagger">
+        <button class="btn-secondary btn-lg" data-goto-step="view-step1">
+          &larr; Back to Step 1
+        </button>
+        <button class="btn-primary btn-lg magnetic-btn" data-goto-step="view-step3">
+          Next: LPG Savings &amp; Boiler Schedule &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         STEP 3: LPG SAVINGS & BOILER SCHEDULE
+         ===================================================================== -->
+    <div id="view-step3" class="workspace-view">
+      <div class="plain-summary-banner banner-emerald spotlight-card anim-stagger">
+        <div>
+          <span class="step-eyebrow">STEP 03 &bull; LPG CONSUMPTION &amp; REDUCTION ANALYSIS</span>
+          <h2 id="step3Headline">Turn OFF the LPG Boiler for 10 Hours &amp; Save 24,966 kg of LPG Today</h2>
+          <p id="step3Subtext">
+            Direct daytime solar steam and evening thermal storage displace fossil fuel across the 24-hour cycle.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 Crisp LPG & Sustainability KPIs -->
+      <div class="clean-3col-kpis anim-stagger">
+        <div class="kpi-card kpi-emerald spotlight-card">
+          <div class="kpi-header">
+            <span class="kpi-label">DAILY LPG FUEL SAVED</span>
+            <span class="kpi-tag" id="kpiLpgReductionPctTag">73.7% Saved</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value" id="kpiLpgSaved">24,966 kg</span>
+            <span class="kpi-delta kpi-delta-green" id="kpiAiExtraLpg">+4,933 kg via AI</span>
+          </div>
+          <div class="kpi-sub" id="kpiLpgBaselineSub">8,912 kg used vs. 33,878 kg without solar</div>
+        </div>
+
+        <div class="kpi-card kpi-cyan spotlight-card">
+          <div class="kpi-header">
+            <span class="kpi-label">LPG BOILER SHUTOFF WINDOW</span>
+            <span class="kpi-tag" id="kpiShutoffHoursTag">10 Hours OFF</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value" id="kpiSolarFractionTag">73.7% Solar</span>
+          </div>
+          <div class="kpi-sub">Share of plant steam demand met without burning LPG</div>
+        </div>
+
+        <div class="kpi-card kpi-teal spotlight-card">
+          <div class="kpi-header">
+            <span class="kpi-label">COST &amp; CARBON SAVED TODAY</span>
+            <span class="kpi-tag">Sustainability</span>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value" id="kpiCostSaved">$22,969</span>
+            <span class="kpi-delta kpi-delta-green" id="kpiCo2Avoided">-74.9 tCO₂</span>
+          </div>
+          <div class="kpi-sub" id="kpiAnnualImpactSub">2025 Annual Savings: $4.12M saved</div>
+        </div>
+      </div>
+
+      <!-- Spacious Animated 24-Hour LPG Boiler ON/OFF Schedule -->
+      <div class="panel-card spotlight-card anim-stagger" id="tourTargetBoilerSchedule">
+        <div class="panel-header">
+          <div>
+            <h3>24-Hour Auxiliary LPG Boiler Dispatch Schedule</h3>
+            <p class="panel-subtitle">Green hours (<strong>OFF</strong>) require zero LPG fuel because solar + stored steam cover 100% of plant demand</p>
+          </div>
+          <div class="btn-row" style="align-items:center;">
+            <button class="btn-helio-help" data-help-topic="boiler-schedule-help">
+              🤔 What do OFF / LOW / ON mean?
+            </button>
+            <div class="legend-inline">
+              <span class="leg-item"><i class="swatch sw-emerald"></i><strong>OFF</strong> (Zero LPG)</span>
+              <span class="leg-item"><i class="swatch sw-amber"></i><strong>LOW</strong> (Partial Load)</span>
+              <span class="leg-item"><i class="swatch sw-coral"></i><strong>ON</strong> (Night Firing)</span>
+            </div>
+          </div>
+        </div>
+        <div class="burner-strip-spacious" id="burnerTimelineStrip"></div>
+      </div>
+
+      <!-- Hourly Steam Supply Mix + Simple Before/After Comparison -->
+      <div class="grid-2col anim-stagger">
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3 id="secondChartTitle">How Plant Steam Demand is Met Each Hour [tons/hr]</h3>
+              <p class="panel-subtitle">Direct Solar (orange) and Stored Steam (teal) displace LPG Boiler Backup (red)</p>
+            </div>
+            <div class="btn-group" id="mainChartModeGroup">
+              <button class="btn-toggle active" data-chartmode="hybrid">Steam Supply Mix</button>
+              <button class="btn-toggle" data-chartmode="lpg">LPG Fuel Curve</button>
+            </div>
+          </div>
+          <div class="legend-inline" id="secondChartLegend" style="margin-bottom:8px;">
+            <span class="leg-item"><i class="swatch sw-amber"></i>Direct Solar Steam</span>
+            <span class="leg-item"><i class="swatch sw-purple"></i>Stored Solar Steam</span>
+            <span class="leg-item"><i class="swatch sw-coral"></i>LPG Boiler Backup</span>
+          </div>
+          <div class="chart-box" id="chartDashboardHybrid" style="height:255px;"></div>
+        </div>
+
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3>Before vs. After LPG Fuel Breakdown</h3>
+              <p class="panel-subtitle">How solar steam and AI storage dispatch cut fuel consumption today</p>
+            </div>
+          </div>
+          <div class="lpg-tier-cards" id="lpgTierComparison"></div>
+          <h4 style="font-size:13px;color:#064e3b;margin:14px 0 8px;">Where Today's LPG Savings Come From:</h4>
+          <div class="levers-grid" id="lpgLeversGrid"></div>
+        </div>
+      </div>
+
+      <div class="step-footer-nav anim-stagger">
+        <button class="btn-secondary btn-lg" data-goto-step="view-step2">
+          &larr; Back to Step 2: Solar Steam Forecast
+        </button>
+        <button class="btn-primary btn-lg magnetic-btn" data-goto-step="view-step4">
+          Continue to Step 4: AI Advisor &amp; Action Plan &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         STEP 4: DEDICATED FULL-SIZE AI ADVISOR & ACTION PLAN
+         ===================================================================== -->
+    <div id="view-step4" class="workspace-view">
+      <div class="ai-hero-banner spotlight-card anim-stagger">
+        <div class="ai-hero-top">
+          <div>
+            <div class="llm-title-row">
+              <span class="badge-ai-pulse">STEP 04 &bull; LIVE GROQ AI DECISION COPILOT</span>
+            </div>
+            <h2>Daily Shift Supervisor Briefing &amp; LPG Reduction Strategy</h2>
+          </div>
+          <button class="btn-secondary btn-sm" id="regenerateLlmBtn">
+            &#x21bb; Synthesize Fresh AI Plan
+          </button>
+        </div>
+        <p id="llmExecutiveBriefing" class="ai-hero-briefing">Loading shift briefing...</p>
+      </div>
+
+      <div class="ai-fullpage-grid anim-stagger">
+        <!-- Left Wide Column: Live Conversational AI Chat -->
+        <div class="panel-card ai-chat-fullcard spotlight-card" id="tourTargetAiChat">
+          <div class="panel-header">
+            <div>
+              <h3>Ask the Live Groq AI Plant Advisor</h3>
+              <p class="panel-subtitle">Real-time conversational decision support grounded in today's 24-hour steam forecast and storage state</p>
+            </div>
+          </div>
+
+          <div class="quick-prompts-row">
+            <button class="chip-prompt" data-q="When should we shut off the LPG backup boiler today and how much fuel does it save?">
+              🔥 When to turn OFF the LPG boiler?
+            </button>
+            <button class="chip-prompt" data-q="How should we charge and dispatch the steam storage tanks today?">
+              🔋 How to use Stored Solar Steam?
+            </button>
+            <button class="chip-prompt" data-q="Give me a simple Morning, Midday, and Evening operator checklist to minimize LPG today.">
+              📋 Morning / Midday / Evening Plan
+            </button>
+            <button class="chip-prompt" data-q="Explain how much LPG fuel and money we save today in simple terms.">
+              💰 Summary of Today's Savings
+            </button>
+          </div>
+
+          <div class="chat-messages-wide" id="chatMessagesBox"></div>
+
+          <form id="chatInputForm" class="chat-input-row">
+            <input type="text" id="chatQuestionInput" placeholder="Ask any operational question (e.g., 'What should operators do between 10 AM and 4 PM today?')..." required />
+            <button type="submit" class="btn-primary magnetic-btn">Send to AI</button>
+          </form>
+        </div>
+
+        <!-- Right Column: Prioritized Operator Action Checklist -->
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3>Prioritized Operator Action Checklist</h3>
+              <p class="panel-subtitle">Interactive shift actions to capture today's LPG savings (<span id="checklistProgressBadge">0/12</span> completed)</p>
+            </div>
+          </div>
+          <div class="strategies-list-wide" id="llmStrategiesContainer"></div>
+        </div>
+      </div>
+
+      <div class="step-footer-nav anim-stagger">
+        <button class="btn-secondary btn-lg" data-goto-step="view-step3">
+          &larr; Back to Step 3: LPG Savings &amp; Schedule
+        </button>
+        <button class="btn-secondary btn-lg" data-goto-step="view-advanced">
+          Inspect Model Accuracy &amp; Data Pipeline &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         TAB 5: MODEL & DATA EVALUATION
+         ===================================================================== -->
+    <div id="view-advanced" class="workspace-view">
+      <div class="plain-summary-banner banner-Subtle spotlight-card anim-stagger">
+        <div>
+          <span class="step-eyebrow">MODEL &amp; DATA VERIFICATION</span>
+          <h2>Seq2Seq Encoder-Decoder Forecast Evaluation &amp; Preprocessing Pipeline</h2>
+          <p>
+            Validation of the <strong>2-Layer LSTM Encoder-Decoder with Bahdanau Attention</strong> (48h lookback &rarr; 24h forecast) on unseen test data and interactive verification of the <strong>preprocessing &amp; median imputation pipeline</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="clean-3col-kpis anim-stagger">
+        <div class="kpi-card kpi-emerald spotlight-card">
+          <div class="kpi-header"><span class="kpi-label">UNSEEN TEST SET ACCURACY (R²)</span><span class="kpi-tag">41,472 Horizon Steps</span></div>
+          <div class="kpi-value" id="evalTestR2">0.9174</div>
+          <div class="kpi-sub">91.7% variance explained on unseen 24h sequence split (Full-Year R²: <span id="evalFullR2">0.9808</span>)</div>
+        </div>
+        <div class="kpi-card kpi-amber spotlight-card">
+          <div class="kpi-header"><span class="kpi-label">AVERAGE HOURLY ERROR (MAE)</span><span class="kpi-tag">24h Test Set Error</span></div>
+          <div class="kpi-value" id="evalTestMae">1.973 t/h</div>
+          <div class="kpi-sub">Test Set RMSE: <span id="evalTestRmse">5.295 t/h</span> | Daily Totals R²: <span id="evalDailyR2">0.9808</span></div>
+        </div>
+        <div class="kpi-card kpi-teal spotlight-card">
+          <div class="kpi-header"><span class="kpi-label">FORECAST SKILL IMPROVEMENT</span><span class="kpi-tag">vs. 24h Persistence</span></div>
+          <div class="kpi-value" id="evalSkillScore">+79.03%</div>
+          <div class="kpi-sub">Accuracy gain over 24h persistence baseline forecast</div>
+        </div>
+      </div>
+
+      <div class="grid-2col anim-stagger">
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3>Which Inputs Drive the Forecast? (Sensitivity Attribution)</h3>
+              <p class="panel-subtitle">Relative input contribution across the 12 standardized features inside <code>seq2seq_encoder_decoder.pt</code></p>
+            </div>
+            <div class="btn-group" id="importanceMetricToggle">
+              <button class="btn-toggle active" data-metric="gain_pct">Gain (%)</button>
+              <button class="btn-toggle" data-metric="weight_pct">Split Frequency (%)</button>
+            </div>
+          </div>
+          <div class="chart-box" id="chartFeatureImportance"></div>
+        </div>
+
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3>Actual vs. Predicted Steam Parity Plot</h3>
+              <p class="panel-subtitle">Points along the 1:1 diagonal show close agreement between predicted and actual steam</p>
+            </div>
+            <div class="btn-group" id="scatterModeToggle">
+              <button class="btn-toggle active" data-mode="hourly">Hourly Test Set (t/h)</button>
+              <button class="btn-toggle" data-mode="daily">Daily Totals (t/day)</button>
+            </div>
+          </div>
+          <div class="chart-box" id="chartParityScatter"></div>
+        </div>
+      </div>
+
+      <div class="grid-2col anim-stagger">
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3>15 Model Features &amp; Missing-Value Imputation (<span id="dataTotalHourly">8,761 rows</span>)</h3>
+              <p class="panel-subtitle">Exact median fallback values loaded from <code>steam_feature_imputer.pkl</code></p>
+            </div>
+          </div>
+          <div class="table-scroll" style="max-height:260px;">
+            <table class="data-table" id="featureAuditTable">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Unit</th>
+                  <th>Missing (%)</th>
+                  <th>Mean</th>
+                  <th>Max</th>
+                  <th>Auto-Impute Median</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel-card spotlight-card">
+          <div class="panel-header">
+            <div>
+              <h3>Batch CSV Upload &amp; Automated Imputation Test</h3>
+              <p class="panel-subtitle">Paste CSV rows (missing <code>NaN</code> values are automatically imputed before inference)</p>
+            </div>
+            <button id="runCsvUploadBtn" class="btn-primary btn-sm">Run Batch Forecast</button>
+          </div>
+          <textarea id="csvBatchInput" class="code-textarea" rows="5">Time,GHI,East_DNI,West_DNI,Ambient_Temp,Wind_Speed,West_Feedwater,East_Feedwater,Hour,DayOfYear,Month,Steam_Current,Steam_lag_1,Steam_lag_2,Steam_lag_3,Steam_lag_24
+16/07/2025 11:00,795.4,885.2,870.5,24.1,11.2,48.5,22.4,11,197,7,98.4,76.2,42.1,12.0,95.0
+16/07/2025 12:00,912.0,940.1,932.8,25.8,NaN,62.1,28.9,12,197,7,128.5,98.4,76.2,42.1,124.2
+16/07/2025 13:00,945.2,960.4,NaN,26.9,13.5,68.4,31.2,13,197,7,144.2,128.5,98.4,76.2,139.8</textarea>
+          <div id="csvUploadResults" class="table-scroll" style="margin-top:10px;"></div>
+        </div>
+      </div>
+
+      <div class="step-footer-nav anim-stagger">
+        <button class="btn-secondary btn-lg" data-goto-step="view-step4">
+          &larr; Back to Step 4: AI Advisor &amp; Action Plan
+        </button>
+        <button class="btn-primary btn-lg magnetic-btn" data-goto-step="view-step1">
+          Return to Step 1: Select Day &amp; Challenges
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- =========================================================================
+       GAME-STYLE INTERACTIVE ONBOARDING TOUR OVERLAY (SPOTLIGHT + HELIO RPG HUD)
+       ========================================================================= -->
+  <div id="gameTourOverlay" class="game-tour-overlay hidden">
+    <div id="tourSpotlightRing" class="tour-spotlight-ring"></div>
+
+    <div id="tourDialogueHud" class="tour-dialogue-hud spotlight-card">
+      <div class="td-character-stage">
+        <div id="tourCharacterSvgContainer" class="td-svg-wrap"></div>
+        <span class="td-mood-pill" id="tourMoodPill">☀️ READY TO ROLL</span>
+      </div>
+
+      <div class="td-content-col">
+        <div class="td-top-bar">
+          <div class="td-speaker-info">
+            <span class="td-speaker-name">HELIO &bull; CHIEF SOLAR ENGINEER</span>
+            <span class="td-quest-counter" id="tourQuestCounter">QUEST 1 OF 6</span>
+          </div>
+          <button class="td-skip-btn" id="tourCloseBtn">Skip Tutorial &times;</button>
+        </div>
+
+        <h3 class="td-quest-title" id="tourQuestTitle">Welcome to HelioSteam Command!</h3>
+        <p class="td-dialogue-text" id="tourDialogueText"></p>
+
+        <div class="td-footer-row">
+          <div class="td-dots" id="tourProgressDots"></div>
+          <div class="td-nav-btns">
+            <button class="btn-secondary btn-sm" id="tourPrevBtn">&larr; Back</button>
+            <button class="btn-primary btn-sm magnetic-btn" id="tourNextBtn">Next Quest &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Glassmorphic Chart Tooltip -->
+  <div id="chartFloatingTooltip" class="chart-floating-tooltip hidden"></div>
+
+  <!-- Floating "Ask AI Advisor" Action Pill -->
+  <button class="floating-ai-btn magnetic-btn" id="floatingAskAiBtn" title="Open AI Advisor & Operator Chat">
+    <span class="dot-live"></span>
+    <span>💬 Ask AI Advisor</span>
+  </button>
+
+  <!-- AI Connection Settings Modal -->
+  <div class="modal-backdrop hidden" id="llmConfigModal">
+    <div class="modal-card spotlight-card">
+      <div class="modal-header">
+        <h3>AI Advisor Connection Settings</h3>
+        <button class="btn-icon" id="closeLlmModalBtn">&times;</button>
+      </div>
+      <p class="modal-desc">
+        Configure your LLM provider and API key for live decision support.
+      </p>
+      <div class="sim-controls-form">
+        <div class="form-group">
+          <label for="llmProviderSelect">LLM Provider</label>
+          <select id="llmProviderSelect">
+            <option value="groq" selected>Groq Cloud API</option>
+            <option value="xai">xAI Grok API</option>
+            <option value="gemini">Google Gemini API</option>
+            <option value="openai">OpenAI Compatible API</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="llmModelInput">Model Name</label>
+          <input type="text" id="llmModelInput" value="openai/gpt-oss-20b" />
+        </div>
+        <div class="form-group">
+          <label for="llmApiKeyInput">API Key</label>
+          <input type="password" id="llmApiKeyInput" placeholder="Leave blank to keep active key" />
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="cancelLlmModalBtn">Cancel</button>
+          <button class="btn-primary" id="saveLlmConfigBtn">Save &amp; Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
